@@ -1,0 +1,649 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+/* 공통색상지정 */
+:root {
+	/* color */ 
+	--brown-color: #8a7057;
+	--brown-dark-color: #53352c;
+	--brown-trans-color: #8a7057ee;
+	--wine-color: #b84a39b7;
+	/* font-size */
+	--large-size: 24px;
+	--midium-size: 20px;
+	--small-size: 14px;
+	--xsmall-size: 12px;
+}
+
+* {
+	box-sizing: border-box
+}
+
+html, body {
+	overflow-x: hidden;
+}
+
+body {
+	background-color: #FBFAFD;
+	width: 100%;
+	min-width: 1280px;
+	height: auto;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* header 시작 */
+.header {
+	width: 100%;
+	height: 94px;
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 1280px;
+	z-index: 10;
+	transition: .3s;
+}
+
+.header.fixed {
+	padding: 0;
+	background-color: rgba(33, 32, 30, 0.95);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+}
+/* logo */
+.header .logo {
+	float: left;
+	display: inline-block;
+	height: 70px;
+	vertical-align: top;
+	margin-top: 18px;
+}
+
+.header .logo a {
+	display: inline-block;
+	width: 230px;
+	height: 100%;
+	background: url(/images/common/logo.png) no-repeat;
+	/* text-indent: -9999em; */
+}
+
+/* nav */
+.nav{
+	float: left;
+    position: relative;
+	margin-top: 39px;
+    margin-left: 45px;
+}
+
+.nav .nav_menu .mainnav{
+	float: left;
+	margin-right: 30px;
+}
+
+.nav .nav_menu .mainnav > li > a {
+	font-size: var(--small-size);
+	font-weight: bold;
+	display: block;
+    position: relative;
+    text-transform: uppercase;
+	line-height: 55px;
+	color: white;
+}
+
+.nav .nav_menu .mainnav li>a:hover{
+	color: #9C836A;
+}
+
+/* 드롭메뉴박스 */
+.header .bgDepth{
+	display: none;
+    height: 300px;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    background: rgba(33,32,30,0.95);
+	position: absolute;
+	top: 94px;
+    left: 0;
+    right: 0;
+}
+
+.header .gnbDepth2 {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 48px;
+    z-index: 1;
+    width: 1000px;
+    height: 400px !important;
+    font-size: 0;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    transition: all .4s ease;
+}
+
+.nav .gnbDepth2 div{
+	float: left;
+    margin-top: 44px;
+    margin-right: 65px;
+    vertical-align: top;
+}
+
+.nav .gnbDepth2 div h2 > a{
+	font-size: 16px;
+    color: #fff;
+    font-weight: 450;
+    text-transform: uppercase;
+}
+
+.nav .gnbDepth2 div h2 > a:hover{
+	color: #9C836A;
+}
+
+.nav .gnbDepth2 div ul {
+	margin-top: 33px;
+}
+
+.nav .gnbDepth2 div ul li{
+	margin-bottom: 15px;
+}
+
+.nav .gnbDepth2 div ul li>a{
+    font-size: 13px;
+    color: #999;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.header.show{
+	background-color: rgba(33, 32, 30, 0.95);
+}
+
+/* Login,JOIN */
+.header_member {
+    position: absolute;
+    top: 0;
+    right: 64px;
+    float: none;
+    margin-right: 0;
+}
+
+.header_member .more{
+	float: left;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    line-height: 1.4em;
+    box-sizing: border-box;
+    font-weight: 200;
+}
+
+.header_member .more .header_member_up li{
+	float: left;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.header_member .more .header_member_up li a {
+	display: block;
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    transition: all .2s ease;
+}
+
+
+.header_member .more .header_member_up li a:hover{
+	color: #9C836A;
+}
+
+/* header 끝 */
+
+a.top {
+	/* position: fixed;
+	left: 50%;
+	bottom: 50px;
+	display: none; */
+	display: inline-block;
+	margin-top: 40px;
+	z-index: 2000;
+  }
+a.reposition{
+	position: relative;
+	bottom: -120px;
+}
+
+/* 대문 시작*/
+.main{
+	width:100%;
+	position: relative;
+}
+.main .main-inner{
+	min-width:1920px;
+	height: 700px; 
+	overflow: hidden;
+	max-height: 700px;
+	margin: 0 auto;
+}
+
+.main .main-inner img {
+	min-width: 1920px;
+}
+/* 대문 끝*/
+
+/* 
+reserve 시작
+.reserve{
+	position: relative;
+	min-width: 1280px;
+	padding: 60px;
+}
+
+.reserve_outerdiv{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding: 0 200px
+}
+
+.reserve_outerdiv .reserve_innerdiv{
+	margin: 0 auto;
+	box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	width: 1000px;
+	height: 100px;
+	background-color: white;
+	display: inline-block;
+}
+
+.reserve_outerdiv .reserve_innerdiv .reserve_form{
+	display: flex;
+	justify-content: space-around;
+	line-height: 55px;
+}
+
+check-in check-out
+
+.reserve_date{
+	width: 400px;
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 10px;
+	line-height: 33px;
+}
+.reserve_date div a{
+	display: inline-block;
+	padding: 10px;
+}
+
+객실,성인,유아
+.reserve_innerdiv .reserve_form .reserve_opt{
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+	line-height: 33px;
+}
+
+.reserve_innerdiv .reserve_form .reserve_opt div a{
+	display: inline-block;
+	padding: 10px;
+}
+
+reserve button
+.reserve_submit{
+	margin-left: 10px;
+}
+.reserve_submit button{
+	margin-top: 25px;
+	width: 100px;
+	height: 50px;
+	background-color:white;
+	border: solid var(--brown-trans-color) 1px;
+	color: var(--brown-trans-color);
+	padding: 8px 28px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.reserve_submit button:hover {
+	background-color:var(--brown-trans-color);
+	color: white;
+	transition: all .3s ease;;
+}
+
+.reserve_form div div p{
+	color:  var(--brown-trans-color);
+}
+reserve 끝
+ */
+
+/* offer 시작 */
+.info{
+	width: 100%;
+}
+
+
+.hotel_info{
+	min-width: 1280px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 150px;
+}
+
+/* offer - title */
+.hotel_info_title{
+	margin: 0;
+	text-align: center;
+}
+
+.hotel_info_title h1{
+	font-size: var(--large-size);
+	color: var(--brown-dark-color);
+	text-transform: uppercase;
+}
+
+.hotel_info_title p{
+	margin-top: 30px;
+	font-size: var(--small-size);
+	font-weight: 500;
+	color: var(--brown-dark-color);
+}
+
+/* offer - content */
+
+/* offer - content - img */
+.hotel_info_detail{
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 55px;
+}
+.hotel_info_ul{
+	overflow: hidden;
+}
+.hotel_info_ul li{
+	display: inline-block;
+	width: 350px;
+	margin: 20px 25px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.432);
+}
+.photozone:hover img{
+	transform: scale(1.1);
+	cursor: pointer;
+    color: rgba(0,0,0,0.65);
+}
+
+.photozone{
+	overflow: hidden;
+}
+
+.photozone img{
+	transition-property: transform;
+	transition-duration: 0.7s;
+}
+
+/* offer - content - txt */
+.photolink .txt{
+	min-height: 180px;
+	padding: 20px;
+	text-align: left;
+	border: 1px solid #f4f2ef;
+    border-top: 0;
+}
+
+.photolink .txt .info_detail_title{
+	display: block;
+	font-size: var(--midium-size);
+}
+
+.photolink .txt .info_detail_content{
+	display: block;
+	height: 40px;
+	margin: 16px 0;
+    color: rgba(0,0,0,0.7);
+    font-size: var(--small-size);
+
+}
+
+.photolink .txt .info_detail_price{
+	color: var(--wine-color);
+	margin-top: 40px;
+}
+/* offer 끝 */
+
+
+/* 이벤트소개시작 */
+.event{
+	width: 100%;
+}
+
+.event_info{
+	min-width: 1280px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 150px;
+}
+
+/* 이벤트-타이틀 */
+.event_info_title{
+	margin: 0;
+	text-align: center;
+}
+
+.event_info_title h1{
+	font-size: var(--large-size);
+	color: var(--brown-dark-color);
+}
+
+.event_info_title p{
+	margin-top: 30px;
+	font-size: var(--small-size);
+	font-weight: 500;
+	color: var(--brown-dark-color);
+}
+
+/* 이벤트-content */
+
+/* 이미지 */
+.event_info_detail{
+	margin-top: 60px;
+	overflow: hidden;
+	vertical-align: baseline;
+}
+
+.event_info_ul{
+	margin: 0 0px 0 -32px;
+    text-align: center;
+    font-size: 0;
+}
+
+.event_info_ul li{
+	box-shadow: 5px 5px 10px rgb(0 0 0 / 43%);
+	vertical-align: middle;
+	display: inline-block;
+    width: 256px;
+    margin: 0 0px 20px 32px;
+    text-align: left;
+}
+.eventzone:hover img{
+	transform: scale(1.1);
+	cursor: pointer;
+    color: rgba(0,0,0,0.65);
+}
+
+.eventzone{
+	overflow: hidden;
+}
+
+.eventzone img{
+	width: 256px;
+    height: 169px;
+	transition-property: transform;
+	transition-duration: 0.7s;
+}
+
+
+
+/* 텍스트 */
+.eventlink .txt{
+	min-height: 160px;
+	padding: 30px 25px;
+    border: 1px solid #f4f2ef;
+    border-top: 0
+}
+
+.eventlink .txt .info_detail_title{
+	display: block;
+    color: rgba(0,0,0,0.85);
+    font-weight: bolder;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: var(--small-size);
+}
+
+.eventlink .txt .info_detail_content{
+	overflow: hidden;
+    display: block;
+    height: 60px;
+    margin: 12px 0 16px;
+    color: rgba(0,0,0,0.7);
+    font-size: var(--small-size);
+	line-height: 1.4em;
+
+}
+
+.eventlink .txt .info_detail_price{
+	color: var(--wine-color);
+	margin-top: 40px;
+}
+
+/* 이벤트소개끝 */
+/* 이미지 캐러셀 시작 */
+.slide{
+	width: 100%;
+	padding-bottom: 150px;
+}
+
+.slide_info{
+	min-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+	padding-top: 150px;
+}
+.slide_title h1{
+	margin-bottom: 60px;
+	height: 82px;
+}
+
+.slide_wrapper{
+	position: relative;
+	width: 1260px;
+	margin: 0 auto;
+	height: 285px;
+	overflow: hidden;
+}
+
+.slides{
+	position: absolute;
+	left: 0; top: 0;
+}
+
+.slides.animated{
+	transition: 0.5s ease-out;
+}
+
+.slides li{
+	width: 400px;
+	height: 378px;
+	background:#ccc;
+	float: left;
+}
+
+.slides li:not(:last-child){
+	margin-right: 30px;
+}
+
+.slide_title{
+	font-size: var(--large-size);
+	color: var(--brown-dark-color);
+}
+	/* 이미지 캐러셀 끝 */
+/* 푸터시작 */
+.footer{
+	width: 100%;
+	background: #21201e;
+	height: 185px;
+}
+.underline{
+	border-bottom: #c2bcbc solid 1px;
+}
+
+.footer_social{
+	overflow: hidden;
+	margin: 0 auto;
+    position: relative;
+    min-width: 1280px;
+    text-align: center;
+}
+
+.footer_social ul{
+	overflow: auto;
+}
+
+.footer_social ul li{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+    border-left: #c2bcbc solid 1px;
+    text-align: center;
+	margin: 0;
+}
+
+.footer_social ul li a{
+	color: rgba(255, 255, 255, 0.644);
+}
+
+.footer_social ul li.last{
+	border-right: #c2bcbc solid 1px;
+}
+
+.footer_box{
+	margin: 0 auto;
+    position: relative;
+    padding: 20px 200px;
+	min-width: 1280px;
+	text-align: center;
+	line-height: 20px;
+}
+
+.footer_box,
+.footer_box a
+{
+	color: rgba(255, 255, 255, 0.644);
+	font-size: var(--small-size);
+}
+.footer_box a{
+	display: inline-block;
+	padding: 10px;
+}
+
+.fab, .far {
+    line-height: 1.9 !important;
+}
+
+.footer_box p{
+	line-height: 24px;
+    color: rgba(255,255,255,0.2);
+}
+/* 푸터끝 */
+

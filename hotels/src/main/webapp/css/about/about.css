@@ -1,0 +1,60 @@
+/* about us */
+.aboutUsWrap .visual {height:302px;padding:84px 0 0 40px;}
+.aboutUsWrap .visual h2 {margin-bottom:15px;text-indent:-2px;font-size:30px;line-height:1.2;font-weight:100;color:#fff;}
+.aboutUsWrap .visual p {line-height:22px;color:rgba(255,255,255,0.8);}
+.aboutUsWrap .visual.hotelInfo {background:url('/images/about/aboutus_visual1.jpg') no-repeat 0 0;}
+.aboutUsWrap .visual.ecoFriendly {background:url('/images/about/aboutus_visual3.jpg') no-repeat 0 0;}
+.aboutUsWrap .col2ListWrap li .img {height:180px;}
+.aboutUsWrap .detailInfo {padding-top:50px;padding-bottom:0;border-style:solid;}
+.aboutUsWrap .detailTextBox h3 {font-size:30px;color:#9c836a;font-weight:100;text-transform:uppercase;}
+.aboutUsWrap .incFacility h4 span {display:block;color:#666;}
+.hotelParadiseWrap .incFacility {display:table; width:1152px; table-layout:fixed; margin-left:-32px;}
+.hotelParadiseWrap .incFacility > li {display:table-cell; padding-left:32px; box-sizing:border-box; vertical-align:top;}
+.hotelParadiseWrap .incFacility .img img {width:100%;}
+.hotelParadiseWrap .incFacility h4 {margin-top:20px;color:#333;font-weight:450;}
+.hotelParadiseWrap .incFacility p.text {height:auto;margin-top:10px;letter-spacing:-0.02em;line-height:24px;} 
+
+	/* history */
+	.historyCont .eventTab {padding:12px 0;margin-top:-26px;border-bottom:1px solid #e6e3df;}
+	.historyCont .bg {position:relative;margin-top:65px;padding:90px 70px 100px 350px;background:#f9f9f9;}
+	.historyCont h2 {display:table;table-layout:fixed;position:absolute;top:-37px;left:63px;width:202px;height:190px;border:1px solid #af9c89;background:url('/images/about/history_bg.jpg') #fff no-repeat 50% 50%;}
+	.historyCont h2 span {display:table-cell;padding:45px;vertical-align:middle;font-weight:100;font-size:30px;color:#9c836a;line-height:35px;text-align:center;}
+	.historyCont h2 span em {font-weight:inherit;line-height:inherit;opacity:0.7;}
+	.historyCont dl {display:table;table-layout:fixed;width:100%;}
+	.historyCont dl + dl {margin-top:20px;}
+	.historyCont dl * {line-height:22px;}
+	.historyCont dl dt {display:table-cell;width:80px;font-size:16px;font-weight:450;color:#333;}
+	.historyCont dd p {padding-left:40px;text-indent:-40px;}
+	.historyCont dd p + p {margin-top:5px;}
+	.historyCont dd .month {display:inline-block;width:38px;text-indent:0;}
+	/* paradise way */
+	.paraWayCont .helpMenu {padding-bottom:48px;margin-bottom:40px;border-bottom:1px solid #f4f2ef;}
+	.paraWayCont ul.helpMenu li {padding:0;}
+	.paraWayCont ul.helpMenu li > a {display:block;padding: 48px 40px 40px;margin:0;}
+	.paraWayCont ul.helpMenu li .icon {background-image:url('/images/about/icon_para_way.png');}
+	.paraWayCont ul.helpMenu li p {min-height:67px;}
+	.paraWayCont .tapView dl {overflow:hidden;}
+	.paraWayCont .tapView dl dt {float:left;width:285px;font-weight:100;font-size:30px;color:#9c836a;line-height:50px;letter-spacing:-1px;text-transform: uppercase;}
+	.paraWayCont .tapView dl dt span {display:block;margin-top:20px;font-weight:200;font-size:16px;color:#333;line-height:26px;letter-spacing:0;}
+	.paraWayCont .tapView dl dd {float:left;width:835px;}
+	.paraWayCont .tapView dl dd p {line-height:22px;}
+	.paraWayCont .tapView dl dd p + p {margin-top:22px;}
+	.paraWayCont .tapView dl dd span {display:block;margin-bottom:10px;font-size:16px;color:#9c836a;line-height:24px;}
+	.paraWayCont .tapView dl dd strong {display:block;margin-bottom:4px;font-weight:450;}
+	[lang="zh"] .paraWayCont .tapView dl dd strong, [lang="ja"] .paraWayCont .tapView dl dd strong {font-weight:300;}
+	.paraWayCont .tapView dl dd span + strong {margin-top:12px;}	
+	ul.helpMenu {margin: 0 -8px;}
+	ul.helpMenu li{float: left; text-align: center; border: 1px solid #e6e3df; width: 268px; padding: 48px 40px 40px; margin: 0 8px; transition: .15s;}
+	ul.helpMenu li .icon {display: block; width: 88px; height: 88px; margin: 0 auto 40px; background: url(/resource/images/pc/casino/casino_help.png); transition: .15s;}
+	ul.helpMenu li p {min-height: 92px; font-weight: 200; color: #666; line-height: 22px; vertical-align: top;}
+	ul.helpMenu li p span{display: block; margin-bottom: 10px; font-weight: 450; color: #333; font-size: 16px; line-height: 1;}
+	[lang="zh"] ul.helpMenu li p span, [lang="ja"] ul.helpMenu li p span {font-weight:300;}
+	ul.helpMenu li > a {margin-top: 30px;}
+	ul.helpMenu li:nth-child(2) .icon{background-position: 0 -88px;}
+	ul.helpMenu li:nth-child(3) .icon{background-position: 0 -176px;}
+	ul.helpMenu li:nth-child(4) .icon{background-position: 0 -264px;}
+	ul.helpMenu li:hover, ul.helpMenu li.on{border-color: #9c836a; box-shadow: 7px 8px 12px rgba(0,0,0,0.1);}
+	ul.helpMenu li:hover .icon { transform:translateY(-10px);}
+
+
+

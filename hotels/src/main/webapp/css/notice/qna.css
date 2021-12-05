@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+#container {
+    min-width: 1280px;
+    min-height: 80%;
+    padding-top: 48px;
+    padding-bottom: 183px;
+    margin-bottom: -183px;
+}
+.subGnb {
+    position: fixed;
+    top: 48px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    border-bottom: 1px solid #e6e3df;
+    background: #fff;
+    transition: top .3s ease;
+    overflow: hidden;
+}
+.forminnerWrap{
+	width:750px;
+	margin: 0 auto;
+}
+
+.formInquiryWrap h1.contTitle {
+    padding: 59px 0 58px;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+p{font-size: 5px; color: #9c836a;}
+
+.ui-select-wrapper .disabled .ui-select-trigger {
+    border: 1px solid #e6e3df;
+    color: #666;
+    cursor: inherit;
+    background: #f9f9f9;
+}
+.btn.small {
+   	width:80%;
+    padding: 0 24px;
+    margin: 40px;
+    font-size: 14px;
+    height: 48px;
+    line-height: 46px;
+}
+
+.btn.btnFull {
+    color: #fff;
+    background: #9c836a;
+}
+article, aside, hgroup, header, footer, figure, figcaption, nav, section {
+    display: block;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, article, aside, hgroup, header, footer, figure, figcaption, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    line-height: 1.4em;
+    box-sizing: border-box;
+    font-weight: 200;
+}
+/* 1:1문의 */
+.formInquiryWrap .formInfo {position:relative;padding-top:40px;}
+.formInquiryWrap .formImportant {position: absolute;top:0;right:0;font-size:14px;color:#666;}
+.formInquiryWrap dt { font-size:14px; color:#9c836a;}
+.formInquiryWrap dd { position:relative; margin-top:5px;}
+.formInquiryWrap dl { margin-bottom:20px;}
+
+
+.formInquiryWrap h1.contTitle {
+    padding: 59px 0 58px;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.formInquiryWrap .category .wrapping { position: relative;
+    padding: 40px 0;
+    border-top: 1px solid #e6e3df; }
+.formInquiryWrap .category .selectBox {width:267px; }
+.formInquiryWrap .category .ui-select-wrapper {width:267px; }
+.formInquiryWrap .category .ui-select-wrapper + .ui-select-wrapper {margin-left:5px;}
+.formInquiryWrap .title { position:relative; width:100%;}
+.formInquiryWrap .title .imp { position:absolute; top:0; right:0; color:#666; margin:10px;}
+.formInquiryWrap .title .imp .color { color:#9c836a;}
+.formInquiryWrap .inp { display:block; width: 50%;}
+.formInquiryWrap .name { float:left; width:50%; padding-right:5px;} 
+.formInquiryWrap .pwd { float:right; width:50%; padding-left:17px; }
+.formInquiryWrap .phone dd { font-size:0;}
+.formInquiryWrap .phone .ui-select-wrapper { width:174px; margin-right:9px;}
+.formInquiryWrap .phone dd span { display:inline-block; width:31px; font-size:14px; color:#000; line-height:46px; vertical-align:middle; text-align:center;}
+.formInquiryWrap .phone .inp { display:inline-block; width:164px;} 
+.formInquiryWrap .phone.full .ui-select-wrapper {width:232px;}
+.formInquiryWrap .phone.full .inp {width:232px;} 
+.textarea {
+    width: 700px;
+    height: 128px;
+    border: 1px solid #e6e3df;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 200;
+    box-sizing: border-box;
+    outline: 0;
+    resize: none;
+}
+.lastdiv{
+    padding:60px;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;
+}
+.inp input {
+    width: 80%;
+    height: 48px;
+    border: 1px solid #e6e3df;
+    padding: 0 12px;
+    padding-right: 46px;
+    line-height: 3;
+    font-size: 14px;
+    font-weight: 200;
+    outline: 0;
+    transition: all .3s ease;
+}
+.formInquiryWrap .inp {
+    display: block;
+    width: 100%;
+}
+.ui-select-wrapper #question {
+	width: 700px;
+     border: 1px solid #e6e3df;
+     padding: 5px;
+     font-size: 18px;
+}
+.ui-select-wrapper #FACILITY1{
+	maring:0;
+}
+
+#title{ width: 700px; padding: 5px; }
+#TEL3 {width: 85%;} 
+#TEL2{
+	width: 100%;
+}
+

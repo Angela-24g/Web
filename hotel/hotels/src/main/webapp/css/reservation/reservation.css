@@ -1,0 +1,647 @@
+.reservationWrap { position:relative; margin:0 auto; padding-bottom:130px;}
+
+.reservationInfoWrap { position:relative;}
+.reservationInfoWrap h1 { margin-top:35px; color:#9c836a; font-size:30px; font-weight:100;}
+.reservationInfoWrap p { margin-top:20px; font-size:14px; color:#666;}
+.reservationInfoWrap .btn { position:absolute; top:0; right:0; }
+
+.selectChoice { display:table; table-layout:fixed; width:100%; padding:12px 15px 18px 15px; border:1px solid #f5f3f0;background:#f9f9f9;}
+.selectChoice dl { display:table-cell; vertical-align:top;}
+.selectChoice dl:first-child { width:256px;}
+.selectChoice dl.type2 { width:396px;}
+.selectChoice dl.type2 + dl.type2 { width:396px;}
+.selectChoice dl.type3 { width:261px;}
+.selectChoice dl.type3 + dl.type3 { width:261px;}
+.selectChoice dl + dl { padding-left:8px;}
+.selectChoice dt { margin-bottom:7px; font-size:14px; color:#9c836a;line-height:16px;}
+.selectChoice dd { position:relative;}
+.selectChoice dd .inp { width:100%;}
+.selectChoice dd .checkbox {margin-top:13px;}
+.selectChoice dd .checkbox + .checkbox {margin-left:43px;}
+.selectChoice dd .ui-select-wrapper { width:100%;}
+.selectChoice > .btn { display:block; margin-left:8px; margin-top:24px;}
+.selectChoice:after { display:none;}
+.selectChoice .clearFixed + .clearFixed { margin-top:20px;}
+.selectChoice .clearFixed + .clearFixed.mt {margin-top:16px;}
+.selectChoice .section { display:table; table-layout:fixed; width:100%}
+.selectChoice .section + .section { margin-top:8px;}
+.selectChoice .section + .section dt { display:none;}
+
+.selectChoice dl.positionSelect { width:333px; font-size:0;}
+.selectChoice dl.positionSelect .ui-select-wrapper { width:251px; margin-right:8px;}
+.selectChoice dl.positionSelect .btn { width:74px; padding:0}
+
+.selectChoice .tooltipBox dl { float:none; width:auto; margin-left:0;}
+.selectChoice .tooltipBox dl + dl { margin-top:5px;}
+.selectChoice .tooltipBox dl dt { color:#9c836a; font-size:12px;}
+.selectChoice .tooltipBox dl dd { margin-top:0;}
+
+.roomSelectBox { position:relative; padding:40px 0; border-top:1px dotted #e6e3df;}
+.roomSelectBox h2 { font-size:16px;}
+.roomSelectBox .swiperWrap { overflow:hidden; height:235px; margin-bottom:32px;}
+.roomSelectBox .swiperWrap ul { overflow:hidden; margin-left:-16px;}
+.roomSelectBox .swiperWrap li { float:left; width:256px; margin-left:16px; outline:0;}
+.roomSelectBox .roomInfo {}
+.roomSelectBox .roomInfo .img { width:256px;}
+.roomSelectBox .roomInfo .img img { width:100%;}
+.roomSelectBox .roomInfo h3 { margin-top:20px; color:#9c836a;}
+.roomSelectBox .roomInfo p { margin-top:10px; color:#333; font-weight: 300;}
+.roomSelectBox .roomInfo .small { margin-top:3px; font-size:12px; color:#999; }
+.roomSelectBox .roomInfo .choice { margin-top:20px;}
+.roomSelectBox .roomInfo .choice > * + * { margin-left:25px;}
+
+.roomSelectBox .swiperArrow { position:absolute; top:43px; right:0;}
+.roomSelectBox .swiperArrow [class*=btn] { width:19px; height:19px;}
+.roomSelectBox .swiperArrow [class*=btn].slick-disabled span { background-position:0 0;}
+.roomSelectBox .swiperArrow .btnLeft span { display:inline-block; width:6px; height:10px; font-size:0; vertical-align: middle; background:url('/resource/images/pc/common/btn/btn_slick_arrow.png') no-repeat 0 -10px;}
+.roomSelectBox .swiperArrow .btnRight span { display:inline-block; width:6px; height:10px; font-size:0; vertical-align: middle; transform:rotate(180deg); background:url('/resource/images/pc/common/btn/btn_slick_arrow.png') no-repeat 0 -10px;}
+.roomSelectBox .swiperArrow .number { display:inline-block; width:75px; text-align:center; vertical-align: middle; font-weight:300; color:#999;}
+.roomSelectBox .swiperArrow .number em { color:#9c836a;}
+
+.smallText {font-size:12px; color:#999; margin-top:5px; padding-left:8px; text-indent:-8px;}
+span.smallText {display:inline-block;}
+.smallText.noIndent {padding-left:0;text-indent:0;}
+.smallText a {color:#9c836a;text-decoration:underline;}
+table + .smallText {margin-top:10px;}
+.descText {color:#999;}
+
+
+.cautionBox { border:1px solid #e6e3df; background:#f9f9f9;}
+.cautionBox h2 {font-size:16px !important; height:56px; padding:0 16px !important; line-height:56px; color:#e66045 !important;}
+.cautionBox h2:before { content:''; display:inline-block; width:20px; height:20px; margin-top:-3px; margin-right:8px; vertical-align:middle; background:url('/images/common/icon_caution.png') no-repeat;}
+.cautionBox .singleText { padding:16px; font-size:12px; color:#e66045;}
+.cautionBox .singleText:before { content:''; display:inline-block; width:20px; height:20px; margin-top:-3px; margin-right:8px; vertical-align:middle; background:url('/images/common/icon_caution.png') no-repeat;}
+.cautionBox .dotList { padding:25px 34px; background:#fff;}
+.cautionBox .dotList li + li { margin-top:10px;}
+.cautionBox .dotList li p {margin-top:5px;}
+.cautionBox .dotList li .title {font-weight:450;}
+.cautionBox .dotList li p + p {margin-top:10px;}
+.cautionBox .textBox { padding:25px 34px; background:#fff;}
+.cautionBox .textBox .title { margin-bottom:10px; color:#666; font-weight:300;}
+.cautionBox .textBox .dotList { padding:0 0;}
+.cautionBox .textBox .dotList + .title { padding-top:20px;}
+
+.cautionBox.settingA { margin:-20px 0 20px; border:0; background:none;}
+.cautionBox.settingA .singleText { padding:0;}
+
+.cautionBox.type2 h2 { color:#9c836a !important;}
+.cautionBox.type2 h2:before { background-position:0 -20px;}
+
+/* 예약 */
+.offerSelectBox {margin-bottom:38px;}
+.offerSelectBox:not(.rvt) .selectChoice {display:block;position:relative;padding:15px 310px 18px 24px;}
+.offerSelectBox:not(.rvt) .selectChoice:after {content:'';clear:both;display:block;}
+.offerSelectBox:not(.rvt) .selectChoice dl {display:block;float:left;width:256px;}
+.offerSelectBox:not(.rvt) .selectChoice dl + dl {margin-left:8px;padding-left:0;}
+.offerSelectBox:not(.rvt) .selectChoice dl.tagWrap {width:100%;margin-left:0;padding-top:13px;overflow:hidden;}
+.offerSelectBox:not(.rvt) .selectChoice dl.tagWrap dt {float:left;display:inline-block;padding:10px 20px 0 0;margin:0;line-height:20px;color:#666;}
+.offerSelectBox:not(.rvt) .selectChoice dl.tagWrap dd {float:left;display:inline-block;width:730px;margin:0 -35px 0 0;}
+.offerSelectBox:not(.rvt) .selectChoice dl.tagWrap .checkbox {margin:10px 35px 0 0;}
+.offerSelectBox:not(.rvt) .selectChoice .btn {position:absolute;bottom:20px;right:25px;width:104px;}
+.offerSelectBox + .eventTab {margin-bottom:12px;}
+	/* offer list */
+	.offersList > li {position: relative;height:234px;border:1px solid #d5cabe;}
+	.offersList > li:after {content:'';clear:both;display:block;}
+	.offersList > li.on {border-color:#9c836a;z-index:1;}
+	.offersList > li.off {border-color:#f4f2ef;}
+	.offersList > li + li {margin-top:24px;}
+	.offersList > li > div.img{float:left;position: relative; width:352px; height:232px;overflow:hidden;}
+	.offersList > li > div.img img { width:100%; height:100%;}
+	.offersList > li > div.img p{position: absolute;top: 0; left: 0;}
+	.offersList > li > div.img p span{float: left; display: block; padding: 0 8px; color: #fff; font-size: 12px; font-weight: 300; line-height: 24px; background-color: #857b71; vertical-align: top;}
+	.offersList > li > div.img p span.type1{background-color: #e66045;}
+	.offersList > li > div.img p span.type2{background-color: #9c836a}
+	.offersList > li > div.img div.cover{display:none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(31,29,28,0.9); text-align: center; transition:all .3s ease; opacity:0;}
+	.offersList > li > div.img div.cover a {position: absolute;top:50%;left:50%;display: block; width: 136px; height:40px; padding: 9px 0; border: 1px solid #fff; color: #fff; transform:translate(-50%,-50%);}
+	.offersList > li > div.img:hover div.cover{display:block; opacity:1;}
+	.offersList > li.sold div.img:after{display: block; content: 'SOLD OUT'; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(156,131,106,0.9); text-align: center; color: #fff; font-weight: 450; line-height: 168px;}
+	.offersList > li.sold:hover div.img div.cover{ z-index:1;}
+	.offersList > li.sold:hover div.img div.cover a { margin-top:20px;}
+	.offersList > li > div.txt {float:left;position:relative;width:765px;height:229px;overflow:hidden;padding:15px 200px 20px 35px;}
+	.offersList > li > div.txt > strong {display:block;margin-bottom:10px;font-weight:100;font-size:26px;color:#333;}
+	.offersList > li > div.txt .pointColor.ellipsis {margin-bottom:10px;}
+	.offersList > li > div.txt .sub {margin-bottom:5px;}
+	.offersList > li > div.txt .sub > span {display:inline-block;position: relative;font-weight:300;color:rgba(0,0,0,0.8);}
+	.offersList > li > div.txt .sub > span + span {margin-left:10px;padding-left:9px;}
+	.offersList > li > div.txt .sub > span + span:before {content:'';position: absolute;top:4px;left:0;width:1px;height:12px;background:#4c4c4c;}
+	.offersList > li > div.txt .desc {height:100px;overflow:hidden;color:#999;line-height:20px;font-size:12px;}
+	.offersList > li > div.txt .desc * {padding-left:0;color:#999;line-height:20px;font-size:12px;}
+	.offersList > li > div.txt .desc li:before {display:none;}
+	.offersList > li > div.txt .price {position:absolute;top:15px;right:34px;text-align:right;font-weight:450;font-size:24px;color:#333;}
+	.offersList > li > div.txt .price em {display:inline-block;margin:0 5px;font-weight:300;font-size:14px;color:rgba(0,0,0,0.8);}
+	.offersList > li > div.txt .btn {position:absolute;top:23px;right:34px;}
+	.offersList > li > div.txt .price + .btn {top:66px;}
+	.offersList > li > div.txt .memberOnly {display:inline-block;position: absolute;top:23px;right:34px;padding-left:25px;font-weight:300;font-size:16px;color:#ad9986;background:url('/resource/images/pc/reservation/icon_lock.png') no-repeat 0 0;}
+	.offersList + .btnPointMore {margin:68px 0 80px;}
+	.offersList > li.on .toggleBtn {background:#9c836a;} 
+	.offersList > li.on .toggleBtn span {color:#fff;}
+	.offersList > li.on .toggleBtn:hover {background:#8a7057;}
+/* 예약 */
+.offerSelectBox.rvt {padding:15px 20px;border:1px solid #f4f2ef;background:#f9f9f9;}
+.offerSelectBox.rvt .selectChoice {padding:0;border:0 none;background:none;}
+.offerSelectBox.rvt .proCode {padding-top:25px;border:0 none;background:none;}
+.offerSelectBox.rvt .proCode .ui-select-wrapper {width:227px;}
+.offerSelectBox.rvt .proCode .inp {display:inline-block;width:266px;margin-left:5px;}
+.offerSelectBox.rvt .proCode .btn {width:103px;margin-left:5px;}
+.offerSelectBox.rvt .selectChoice:not(.proCode) dl {width:140px;}
+.offerSelectBox.rvt .selectChoice:not(.proCode) dl:first-child {width:256px;}
+.offerSelectBox.rvt .selectChoice:not(.proCode) dl + dl {padding-left:8px;}
+	
+	/* 예약 펼침 */
+	.offersList .spreadWrap {display:none;float:left;width:100%;padding:25px 24px 0;background:#fefefe;}
+	.offersList > li.on .spreadWrap {display:block;}
+	.spreadWrap .offers {padding:0 6px 15px !important;overflow:hidden;}
+	.spreadWrap .offers h2 {font-weight:300;color:#333;}
+	.spreadWrap .jsSwiperMotion.type2 {display:block;}
+	.spreadWrap .jsSwiperMotion.type2 .slick-initialized {margin-left:-10px;}
+	.spreadWrap .jsSwiperMotion .swiperWrap li {width:256px !important;margin-left:10px !important;margin-right:0;}
+	.spreadWrap .offers ul li div.txt {min-height:auto;padding:0;overflow:hidden;font-size:13px;background:#fff;}
+	.spreadWrap .offers ul li div.txt strong {display:block;height:76px;padding:15px 24px;font-size:15px;background:#f9f9f9;}
+	.spreadWrap .offers ul li div.txt strong span {height:46px;overflow:hidden;font-weight:450;font-size:16px;color:rgba(0,0,0,0.85);line-height:22px;white-space: normal;text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+	.spreadWrap .offers ul li span.sub {height:auto;padding:15px 24px;margin:0;}
+	.spreadWrap .offers ul li > a {display:block;position:relative;}
+	.spreadWrap .offers ul li:hover > a:after, .spreadWrap .offers ul li.on > a:after {content:'';position:absolute;top:0;left:0;bottom:0;right:0;border:1px solid #9c836a;}
+	.spreadWrap .offers ul li:hover, .spreadWrap .offers ul li.on {box-shadow:2px 2px 5px rgba(0,0,0,0.1);}
+	.spreadWrap .rsvWrap {width:1118px;margin-left:-24px;padding-bottom:0;border-top:1px solid #f4f2ef;background:#fff;position: relative;}
+	.spreadWrap .reservationBox {width:782px;min-height:400px;padding:25px 0 45px 32px;}
+	.spreadWrap .reservationBox h2 {margin-bottom:5px;font-weight:300;font-size:16px;color:#333;} 
+	.spreadWrap .reservationBox .choiceWrap dl {display:table;table-layout:fixed;width:100%;}
+	.spreadWrap .reservationBox .cautionBox {margin-top:10px;border:0 none;background:none;}
+	.spreadWrap .reservationBox .cautionBox .dotList {padding:0;background:none;}
+	.spreadWrap .reservationBox .cautionBox .dotList li {margin-top:0;font-size:12px;line-height:19px;}
+	.spreadWrap .reservationBox .cautionBox .dotList li + li {margin-top:3px;}
+	.spreadWrap .choiceWrap.add {/* margin-top:30px;padding-top:20px;border-top:1px dotted #e6e3df; */}
+	.spreadWrap .choiceWrap dl dt {display:table-cell;width:84px;color:#9c836a;}
+	.spreadWrap .choiceWrap dl dd {display:table-cell;padding:12px 0;}
+	.spreadWrap .choiceWrap .radioBox + .radioBox {margin-left:20px;}
+	.optionSelectBox {position:relative;margin-top:24px; padding-top:25px; border-top:1px dotted #e6e3df;}
+	.spreadWrap .reservationBox .optionSelectBox h2 {margin-bottom:10px;}
+	.optionSelectBox > div:after {content:'';clear:both;display:block;}
+	.optionSelectBox > div:not([style]) + div {margin-top:24px;padding-top:25px;border-top:1px dotted #e6e3df;}
+	.optionSelectBox .img { float:left; width:256px;height:140px;}
+	.optionSelectBox .img img { width:100%;}
+	.optionSelectBox .optionInfo { float:right; width:450px;}
+	.optionSelectBox .optionInfo h3 { margin-bottom:8px; color:#9c836a; font-size:16px;}
+	.optionSelectBox .optionInfo p { overflow:hidden; line-height:22px; color:#666;}
+	.optionSelectBox .optionInfo .casy {height:auto; margin:20px 0 25px; color:#000;}
+	.spreadWrap .reservationBox .optionSelect {margin-top:20px;}
+	.spreadWrap .reservationBox .optionSelect > dl {display:table;width:435px;}
+	.spreadWrap .reservationBox .optionSelect > dl > dt {display:table-cell;height:58px;padding:8px 8px 0 0;vertical-align:middle;}
+	.spreadWrap .reservationBox .optionSelect > dl > dd {display:table-cell;width:146px;padding:8px 8px 0 0;}
+	.optionSelectBox .optionInfo dd .ui-select-wrapper { width:100%;}
+	.optionSelectBox .optionSelect { position:relative;}
+	.optionSelectBox .optionSelect .btn { position:absolute; bottom:0; right:0;}
+	
+	.spreadWrap .reservationAside {top:48px;right:35px;}
+	.spreadWrap .reservationSection {position:relative;}
+	.spreadWrap .reservationSection .productWrap {min-height:auto;}
+	.productPrice {padding:9px 0;}
+	.productPrice dl {display:table;table-layout:fixed;width:100%;padding:10px 0;}
+	.productPrice dl dt {display:table-cell;width:50%;padding:0 0 0 10px;font-weight:300;color:#333;vertical-align:middle;}
+	.productPrice dl dd {display:table-cell;width:50%;padding:0 10px;font-weight:450;text-align:right;color:rgba(0,0,0,0.8);vertical-align:middle;}
+	.spreadWrap .reservationSection .productTotal {height:auto;margin:5px 0 20px;border-top:0 none;}
+	.spreadWrap .reservationSection .productTotal dt {line-height:50px;}
+	.spreadWrap .reservationSection .productTotal dd {line-height:50px;}
+	.spreadWrap .reservationSection .productTotal .smallText {margin-top:0;}
+	/* offer view */
+	.offersView {position:relative;padding-top:40px;}
+	.offersView .hGroup {position: relative;padding-right:250px;}
+	.offersView .hGroup > h2 {padding:0;font-size:30px; color:#9c836a; font-weight:100; line-height:44px;}
+	.offersView .hGroup .state {position:absolute;top:10px;right:0;width:250px;text-align:right;font-size:0;vertical-align:top;}
+	.offersView .hGroup .state span { display:inline-block; height:24px; padding:0 8px; margin-left:4px; font-size:12px; line-height:24px; color:#fff; background:#7e7578;}
+	.offersView .hGroup .state .type1 { background:#da5b4e;}
+	.offersView .hGroup .state .type2 { background:#9c836a;}
+	.offersView .hGroup .state .type3 {}
+	.offersView .hGroup .info {margin-top:8px; font-size:14px; color:#999;}
+	.offersView .hGroup .info li {padding-left:0;}
+	.offersView .hGroup .info li:before {display:none;}
+	.offersView .hGroup .info li + li {margin-top:5px;}
+	.offersView .hGroup .price {position: absolute;top:43px;right:0;font-weight:450;font-size:30px;color:#333;}
+	.offersView .hGroup .price span {display:inline-block;margin-right:10px;font-weight:300;font-size:14px;color:rgba(0,0,0,0.8);}
+	.offersView .btnReservation { margin-top:25px;}
+	.offersView .imgTextBox {margin-top:30px;}
+	.offersView .imgTextBox .visual {mamargin-bottom:30px;}
+	.offersView .imgTextBox .visual img {width:100%;}
+	.offersView .imgTextBox h3 { margin-top:28px; font-size:16px; color:#9c836a;}
+	.offersView .imgTextBox p { margin-top:8px; color:#666666; line-height:22px;}
+	.offersView .imgTextBox p.info {margin-top:12px;}
+	.offersView .detailInfo {padding:45px 0 0;margin-top:45px;border-style:solid;}
+	.offersView .detailInfo > * + * {margin-top:40px;}
+	.offersView .detailInfo h3 span {font-size:14px;color:#666;}
+	.offersView .detailInfo .dotList > li + li {margin-top:5px;}
+	.offersView .proBenefit p + .dotList {margin-top:10px;}
+	.offersView .proBenefit .dotList li {padding-left:0;}
+	.offersView .proBenefit .dotList li:before {display:none;}
+	.offersView .facilities { overflow:hidden; margin:32px 0 0 -8px;}
+	.offersView .facilities .kind { overflow:hidden; float:left; position:relative; margin:0 0 8px 8px; width:202px; height:126px; font-size:300;}
+	.offersView .facilities .kind img {width:202px; height:126px;}
+	.offersView .facilities .kind span { position:absolute; top:50%; left:0; right:0; text-align:center; color:#fff; transform: translateY(-50%);}
+	.offersView .facilities .kind:before { content:''; display:block; position:absolute; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.4)}
+	.offersView .facilitiesText { margin-top:5px; font-size:12px; color:#999999;}
+	.offersView .itemDetail .component {margin-bottom:-32px;}
+	.offersView .roomsPrice .descText {line-height:22px;}
+	.offersView .roomsPrice.accordionWrap {margin-top:-46px;margin-bottom:25px;}
+	.offersView .roomsPrice.accordionWrap + .roomsPrice.accordionWrap {margin-top:25px;margin-bottom:0;}
+	.offersView .roomsPrice.accordionWrap > .title {position:relative;padding:22px 24px;border:1px solid #e6e3df;background-color:#f9f9f9;font-weight:300;color:#9c836a;cursor:pointer;}
+	.offersView .roomsPrice.accordionWrap > .title * {color:inherit;}
+	.offersView .roomsPrice.accordionWrap > .title:after {content:'';position: absolute;top:50%;right:24px;margin-top:-4px;width:15px;height:8px;background:url(/resource/images/pc/mypage/icon_inquiry_arrow.png) no-repeat 0 -8px;}
+	.offersView .roomsPrice.accordionWrap > .title.on:after {background-position:0 0;}
+	.offersView .roomsPrice .accordionBox {padding:0;margin-top:25px;}
+	.offersView .roomsPrice .accordionBox .priceList {margin-bottom:0;}
+	.offersView .roomsPrice .priceList thead th.tbg:after {background:#9fa09b;}
+	.offersView .roomsPrice .priceList thead th[rowspan]:after {content:none;}
+	.offersView .roomsPrice .priceList .tbg1 {background:#ececec;}
+	.offersView .roomsPrice .priceList .tbg2 {background:#f2f2f2;}
+	.offersView .priceDetail {padding-bottom:0;}
+	.offersView .priceDetail > h3 {padding-bottom:15px;border-bottom:1px solid #f4f2ef}
+	.offersView .cautionBox {margin-top:55px;}
+	.eventViewWrap .offerViewWrap.viewBox {min-height:600px;overflow:visible;}
+	.eventViewWrap .offerViewWrap.viewBox .cont {position:fixed;top:290px;left:0;right:0;width:1120px;margin:0 auto;}
+	.eventViewWrap .offerViewWrap.viewBox .cont.btm {position: absolute;top:auto;bottom:0;left:auto;right:0;width:256px;}
+	.offerViewWrap .cont .infoTel {position:absolute;top:0;right:0;width:256px;padding-left:30px;background:url('/resource/images/pc/common/icon/icon_phone.png') no-repeat 0 3px;}
+	.offerViewWrap .cont .infoTel dt {margin-bottom:5px;font-weight:300;font-size:16px;color:#9c836a;}
+	.offerViewWrap .cont .infoTel dd {font-weight:300;color:#999;}
+	.offerViewWrap .cont .selectChoice {position:absolute;top:0;right:0;width:256px;display:block;padding:0;border:0 none;background:none;}
+	.offerViewWrap .cont .selectChoice dl {display:block;width:100%;}
+	.offerViewWrap .cont .selectChoice dl + dl {padding:8px 0 0;}
+	.offerViewWrap .cont .selectChoice > .btn {margin:23px 0 0;}
+	.offerViewWrap .cont .selectChoice .date-picker-wrapper {margin-top:4px;margin-left:-114px;}
+	.offerViewWrap .cont.btm .selectChoice {position: relative;}
+	
+	@media (max-width:1300px){
+		.eventViewWrap .offerViewWrap.viewBox .cont {width:1200px;}
+	}
+
+/* 예약 상세 */
+.reservationWrap.detail .contTitle {margin-bottom:50px;border-bottom:1px solid #f4f2ef;}
+/* 예약 우측 모양 */
+.reservationAside {position: absolute; top:245px; right:0; width:256px;}
+.reservationAside .txtRed{color:#e35555 !important;}
+.reservationAside > h1 {margin-bottom:15px;font-weight:300;font-size:16px;color:rgba(0,0,0,0.8);}
+.reservationAside .resetBtn {position: absolute;top:0;right:0;padding-left:22px;font-weight:300;color:#9c836a;border-bottom:1px solid #9c836a;background:url('/resource/images/pc/reservation/icon_reset.png') no-repeat 0 50%;}
+.reservationSection {position: relative;}
+.reservationSection .productHeader { position:relative; border:1px solid #f4f2ef; border-bottom:0; border-radius:5px 5px 0 0; background:#f9f9f9;}
+.reservationSection .productHeader .btnDeleteAll { display:block; position:absolute; top:50%; right:7px; width:69px; height:24px; margin-top:-12px; border:1px solid #9c836a; border-radius:20px; line-height:22px; font-size:12px; color:#9c836a; text-align:center;}
+.reservationSection .productHeader h1 { display:table; width:100%; font-size:16px; color:#9c836a;}
+.reservationSection .productHeader h1 span { display:table-cell; height:48px; padding-left:16px; padding-right:85px; vertical-align: middle; font-family:'roboto'; font-weight:500;}
+.reservationSection .productWrap { position:relative; min-height:400px; border:1px solid #f4f2ef; border-radius:5px; background:#f9f9f9;}
+.reservationSection .productNone { display:table-cell; width:254px; height:100%; font-size:14px; color:#9c836a; text-align:center; vertical-align:middle;}
+
+.reservationSection .productListBox {}
+.reservationSection .productListBox .productItem:first-child .productListH { border-top:0;}
+.reservationSection .productListBox .productListH { position:relative; border-top:1px solid #fff;}
+.reservationSection .productListBox .productListH h2 {display:table; width:100%; font-size:14px; color:#9c836a;}
+.reservationSection .productListBox .productListH h2 span { display:table-cell; height:48px; padding-left:16px; padding-right:47px; vertical-align: middle; font-weight:450; cursor:pointer;}
+.reservationSection .productListBox .productListH .btnDelete { display:block; position:absolute; top:50%; right:7px; width:24px; height:24px; margin-top:-12px; font-size:0; background:url('/resource/images/pc/reservation/btn_product_close.png') no-repeat;}
+.reservationSection .productListBox .productListH + .productListC {border-top:1px dotted #e6e3df;}
+.reservationSection .productListBox .productListC {padding:0 16px 10px;}
+.reservationSection .productListBox .productListC + .productListC {border-top:1px solid #fff;}
+.reservationSection .productListBox .productListC h3 { margin:16px 0 13px; font-size:14px; font-weight: 450; color:#333;}
+.reservationSection .productListBox .productListC p { margin-top:5px;}
+.reservationSection .productListBox .productListC .productPrice {margin:0 -10px -10px;}
+.reservationSection .productListBox .productListC .productPrice dl {padding:3px 0;}
+.reservationSection .productListBox .productListC .productPrice * {font-weight:200;color:#666;}
+
+.reservationSection .productListBox .productItem.on .productListH h2 { background:#fff;}
+
+.reservationSection .casyBox { padding:20px 0 16px;}
+.reservationSection .casyBox dl { overflow:hidden; font-size:14px; color:rgba(0,0,0,0.7);}
+.reservationSection .casyBox dl + dl { margin-top:5px;}
+.reservationSection .casyBox dt { float:left; width:75px;}
+.reservationSection .casyBox dd { float:right; width:110px; text-align:right;}
+.reservationSection .casyBox .bold,
+.reservationSection .casyBox .total dt,
+.reservationSection .casyBox .total dd { font-weight:450; color: rgba(0,0,0,0.8); }
+
+.reservationSection .optionListWrap { position:relative; margin:0 -16px; padding:0 16px 0 33px; background:#fff;}
+.reservationSection .productListC .optionListWrap {margin-bottom:-10px;padding-bottom:10px;}
+.reservationSection .optionListWrap + .optionListWrap { border-top:1px solid #f9f9f9;}
+.reservationSection .optionListWrap .cont { padding:13px 0 0px;}
+.reservationSection .optionListWrap .cont dt { position:relative; margin-bottom:10px; font-size:12px; color:#9C836A; font-weight:450;}
+.reservationSection .optionListWrap .cont dt:before { content:''; display:block; position:absolute; top:3px; left:-16px; width:10px; height:10px; background:url('/resource/images/pc/reservation/icon_product_depth1.png') no-repeat;}
+.reservationSection .optionListWrap .cont dd { font-size:12px; color:#666;}
+.reservationSection .optionListWrap .cont dd p { margin-bottom:0;}
+.reservationSection .optionListWrap .casyBox * { font-size:12px;}
+.reservationSection .optionListWrap .btnOptionClose { position:absolute; top:13px; right:10px; width:18px; height:18px; font-size:0; background:url('/resource/images/pc/reservation/btn_option_close.png') no-repeat;}
+
+.reservationSection .mark { display:inline-block; width:16px; height:16px; border-radius:50%; text-align:center; font-size:10px; font-weight: 450; line-height: 16px; color:#fff; vertical-align:middle; background:silver;}
+.reservationSection .mark.Red { background:#dc5b51;}
+.reservationSection .mark.Purple { background:#9c4ac7;}
+.reservationSection .mark.Gold { background:#c69d5b;}
+.reservationSection .mark.Orange { background:#f1924c;}
+.reservationSection .mark.Platinum { background:#666666;}
+.reservationSection .mark.Diamond { background:#999999;}
+.reservationSection .mark.Black { background:#333333;}
+.reservationSection .casyBox .tooltipBox { width:200px; transform: translate(-90%, -100%); text-align:center;}
+.reservationSection .casyBox .tooltipBox p { margin-bottom:0;}
+.reservationSection .casyBox .tooltipBox:after { left:88%;}
+
+.reservationSection .productFooter { padding:24px 8px 16px;}
+.reservationSection .productFooter dl { overflow:hidden; font-size:14px; color:rgba(0,0,0,0.7);}
+.reservationSection .productFooter dl + dl { margin-top:5px;}
+.reservationSection .productFooter dt { float:left; width:70px;}
+.reservationSection .productFooter dd { float:right; width:170px; text-align:right;}
+.reservationSection .productTotal { height:56px; }
+.reservationSection .productFooter + .productTotal {border-top:1px solid #f4f2ef;}
+.reservationSection .productTotal dl { overflow:hidden; color:#9c836a;}
+.reservationSection .productTotal dt { float:left; width:70px; line-height:56px;}
+.reservationSection .productTotal dd { float:right; width:170px; line-height:56px; text-align:right; font-family:'Roboto';font-weight:400;font-size:16px;}
+.reservationSection .productTotal dd span { font-size:24px; font-family:'roboto'; font-weight:500;}
+.reservationSection > .btn { display:block; width:100%; border-radius:5px; margin-bottom:24px; box-shadow:3px 3px 15px rgba(0,0,0,0.25);}
+
+
+.settingD_reservation { position:relative; margin:40px 0 20px;}
+.settingD_reservation.type1 { height:300px;}
+.settingD_reservation.type2 { height:303px;}
+.settingD_reservation.type3 { height:300px;}
+.settingD_reservation > img { display:none; position:absolute; top:0; left:0;}
+.settingD_reservation > img:first-child { display:block;}
+
+.settingCasyInfo { overflow:hidden; position:relative; border-bottom:1px solid #f4f2ef; padding-bottom:20px; margin:5px 0 -20px;}
+.settingCasyInfo h4 { position:absolute; top:3px; left:0; font-size:14px; color:#9c836a;}
+.settingCasyInfo dl { overflow:hidden; float:left; width:48%; margin-top:5px;}
+.settingCasyInfo dl:nth-child(2n) { margin-left:4%;}
+.settingCasyInfo dt { float:left; font-size:14px; color:#666666;}
+.settingCasyInfo dt span { display:inline-block; width:10px; height:10px; margin-right:5px; border-radius:50%; background:red;}
+.settingCasyInfo dd { float:right; font-size:14px; color:#999;}
+.settingCasyInfo.type2 { padding-left:45%;}
+.settingCasyInfo.type2 dl { width:100%;}
+.settingCasyInfo.type2 dl:nth-child(2n) { margin-left:0%;}
+
+/* leo체험 */
+.leoInfoWrap .detailTextBox {margin-bottom:70px;}
+.leoInfoWrap .leoInfoCont {margin-bottom:50px;}
+.leoInfoWrap .tapBox + ul.dotList {padding-bottom:45px;border-bottom:1px solid #f4f2ef;}
+.leoInfoWrap ul.dotList em {color:#e66045;}
+.leoInfoWrap ul.dotList li + li {margin-top:8px;}
+.leoInfoWrap .loginWrap {padding:50px 40px 100px;background:#f9f9f9;}
+.leoInfoWrap .loginBox {float:none;width:480px;}
+.leoInfoWrap .loginBox h3 {margin-bottom:10px;font-weight:300;font-size:16px;color:rgba(0,0,0,0.8);}
+.leoInfoWrap .loginBox .desc {margin-top:15px;}
+.leoInfoWrap .listNone {padding:80px 0 100px;}
+.leoInfoWrap .leoOfferList {margin-top:50px;}
+.leoInfoWrap .leoOfferList > h2 {margin-bottom:10px;font-size:16px;color:#333;}
+.leoInfoWrap .leoOfferList .cautionBox {margin-top:55px;}
+	/* 예약하기 */
+	.leoInfoWrap .reservationWrap {padding-top:45px;padding-bottom:0;}
+	.leoInfoWrap .reservationWrap:after {content:'';clear:both;display:block;}
+	.leoInfoWrap .reservationBox {float:left;}
+	.leoInfoWrap .reservationBox > h2 {font-size:16px;color:#333;}
+	.leoInfoWrap .reservationBox .calendarWrap {overflow:hidden;}
+	.leoInfoWrap .reservationBox .calendarWrap .date-picker-wrapper {z-index:1;} 
+	.leoInfoWrap .calendarWrap .calendar {float:left;width:347px;}
+	.leoInfoWrap .calendarWrap .calendar #date-range12 {display:none;}
+	.leoInfoWrap .calendarWrap .leoDateInfo {float:left;width:453px;padding:80px 0 0 32px;}
+	.leoInfoWrap .leoDateInfo .dateGuide li {position:relative;margin-bottom:14px;padding-left:27px;line-height:15px;}
+	.leoInfoWrap .leoDateInfo .dateGuide li:before {content:'';position: absolute;top:0;left:0;width:15px;height:15px;border-radius:2px;border:1px solid #d2d2d2;background:#f9f9f9;}
+	.leoInfoWrap .leoDateInfo .dateGuide li:nth-child(2):before {border-color:#9c836a;background:#9c836a;}
+	.leoInfoWrap .leoDateInfo .cautionBox {margin-top:40px;padding-top:20px;border:0 none;border-top:1px dotted #e6e3df;background:none;}
+	.leoInfoWrap .leoDateInfo .cautionBox h2 {height:50px;padding:0 !important;}
+	.leoInfoWrap .leoDateInfo .cautionBox p {line-height:24px;}
+	.leoInfoWrap .programWarp {margin-top:55px;}
+	.leoInfoWrap .programWarp p.desc strong {color:#9c836a;}
+	.leoInfoWrap .programWarp p.desc em {color:#e66045;}
+	.leoInfoWrap .programWarp .selectBox * {text-align:left;}
+	.leoInfoWrap .programWarp .ui-select-wrapper + .ui-select-wrapper {margin-left:5px;}
+	.leoInfoWrap .programWarp table.basicForm {margin-top:10px;}
+	.leoInfoWrap .programWarp table.basicForm > tbody > tr > td {font-weight:200;}
+	.leoInfoWrap .programWarp table.basicForm > tbody > tr > td strong {display:block;font-weight:300;color:#333;}
+	.leoInfoWrap .programWarp .ParentsWrap > td {padding:30px 32px;text-align:left;}
+	.leoInfoWrap .programWarp .ParentsWrap > td table {width:650px;margin-top:10px;}
+	.leoInfoWrap .programWarp .ParentsWrap > td table th {height:30px;font-weight:200;color:#9c836a;}
+	.leoInfoWrap .programWarp .ParentsWrap > td table td {padding:4px 0;}
+	.leoInfoWrap .programWarp .ParentsWrap > td table .inp {width:100%;padding-right:10px;}
+	.leoInfoWrap .programWarp .ParentsWrap > td table + .checkbox {margin-top:10px;}
+	.leoInfoWrap .programWarp .ParentsWrap .checkbox a {display:inline-block;margin-left:10px;color:#9c836a;text-decoration:underline;}
+	
+	/* 예약 우측 */
+	.leoInfoWrap .reservationAside {position: static;top:0;left:0;margin-left:64px;float:left;}
+	.leoInfoWrap .reservationSection .productWrap {min-height:150px;margin-bottom:20px;}
+	.leoInfoWrap .reservationSection .productNone {height:150px !important;}
+	.leoInfoWrap .reservationSection .productListBox .productListC h3 span {display:block;margin-top:3px;color:#666;}
+	
+.listNone { padding:40px 0; font-size:16px; color:#9c836a; text-align:center;}
+.listNone p { padding-top:55px; background:url('/images/reservation/icon_none.png') no-repeat center 0;}
+.listNone.bigSize p { padding-top:138px; background:url('/images/reservation/icon_none_big.png') no-repeat center 0;}
+
+/* 예약 글작성 */
+.reservationWrap .offerCont + .offerCont, .reservationWrap .offerCont#poListDiv {margin-top:60px;}
+	.reservationWrap .offerTitle {margin:20px 0 10px;font-weight:450;font-size:16px;color:#333;}
+	.reservationWrap .cautionBox {margin-top:50px;}
+	.reservationBox{width: 800px; padding-bottom:40px;}
+	.reservationBox > img:first-child { width:800px; height:320px;}
+	.reservationBox + .reservationBox { padding-top:40px; border-top:2px solid #9c836a;}		 
+	div.offers{padding-top: 28px;}
+	div.offers:first-of-type{padding-top: 20px;}
+	div.offers:last-of-type{padding-bottom: 80px;}
+	div.offers h2{margin-bottom: 15px; font-size: 16px; font-weight: 450; color: rgba(0,0,0,0.85);}
+	div.offers ul{margin: 0 -8px 0;}
+	div.offers ul li{float: left; width: 256px; margin: 0 8px 20px;}
+	div.offers ul li:nth-child(1),
+	div.offers ul li:nth-child(3n + 1) { animation-delay: 0s;}
+	div.offers ul li:nth-child(2),
+	div.offers ul li:nth-child(3n + 2) { animation-delay: 0.2s;}
+	div.offers ul li:nth-child(3),
+	div.offers ul li:nth-child(3n + 3) { animation-delay: 0.4s;}
+	div.offers ul li:nth-child(4),
+	div.offers ul li:nth-child(4n + 4) { animation-delay: 0.6s;}
+	div.offers ul li div.img{position: relative; width:256px; height:169px;background:url('/resource/images/pc/common/empty_logo.png') #f9f9f9 no-repeat 50% 50%;}
+	div.offers ul li div.img img { width:100%; height:100%;}
+	div.offers ul li div.img p{position: absolute;top: 0; left: 0;}
+	div.offers ul li div.img p span{float: left; display: block; padding: 0 8px; color: #fff; font-size: 12px; font-weight: 300; line-height: 24px; background-color: #857b71; vertical-align: top;}
+	div.offers ul li div.img p span.type1{background-color: #e66045;}
+	div.offers ul li div.img p span.type2{background-color: #9c836a}
+	div.offers ul li div.img div.cover{ visibility:hidden; position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding-top: 42px; background-color: rgba(31,29,28,0.9); text-align: center; transition:all .3s ease; opacity:0;}
+	div.offers ul li div.img div.cover a{display: block; width: 113px; margin: 0 auto 8px; padding: 9px 0; border: 1px solid #fff; color: #fff; transform:translateY(-10px);transition:transform .3s ease;}
+	div.offers ul li div.img div.cover a + a { transform:translateY(10px);}
+	div.offers ul li:hover div.img div.cover{ visibility:visible; opacity:1;}
+	div.offers ul li:hover div.img div.cover a { transform:translateY(0px);}
+	div.offers ul li.sold div.img:after{display: block; content: 'SOLD OUT'; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(156,131,106,0.9); text-align: center; color: #fff; font-weight: 450; line-height: 168px;}
+	div.offers ul li.sold:hover div.img div.cover{ z-index:1;}
+	div.offers ul li.sold:hover div.img div.cover a { margin-top:20px;}
+	div.offers ul li div.txt{position: relative;min-height:210px;padding: 20px 25px 70px; border: 1px solid #e6e3df;}
+	div.offers ul li strong{display: block; color: rgba(0,0,0,0.85); font-weight: 450; text-transform: uppercase; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+	div.offers ul li span.sub{overflow:hidden; display: block; height:38px; margin: 12px 0 16px; color: rgba(0,0,0,0.7);}
+	div.offers ul li p.price{margin-bottom: 18px;}
+	div.offers ul li p.price span{height:20px;font-weight: 450;}
+	div.offers ul li p.price span.price1{font-size: 14px; color: rgba(0,0,0,0.85);}
+	div.offers ul li p.price span.price2{position: relative; font-size: 12px; margin-left: 1px; color: rgba(0,0,0,0.4);}
+	div.offers ul li p.price span.price2:after{display: block; content: ''; position: absolute; top: 50%; left: 0; width: 100%; height: 1px; background-color: rgba(0,0,0,0.3);}
+	div.offers ul li p.price span.discount{font-size: 14px;color: #e66045; margin-left: 5px;}
+	div.offers ul li span.tag{ overflow:hidden; display: block; height:36px; font-size: 12px; line-height: 18px;}
+	div.offers ul li span.date{display: block; font-size: 12px; line-height: 1; margin-top: 2px; }
+	div.offers ul li .btn.full {position: absolute;bottom:30px;left:20px;width:204px;}
+	.reservationBox div.moreOffers{position: relative; width: 100%; height: 36px; text-align: center;}
+	.reservationBox div.moreOffers:before{display: block; content: ''; position: absolute; left: 0; top: 50%; width: 100%; height: 1px; background-color: #f4f2ef;}
+	.reservationBox div.moreOffers a{display: inline-block; position: relative; height: 36px; padding: 10px 6px 0; background-color: #fff; }
+	.reservationBox div.moreOffers a span{display: inline-block; padding: 0 3px 0 19px; line-height: 16px; vertical-align: top; color: #9c836a; font-weight: 300; border-bottom: 1px solid #9c836a; z-index: 1; background: url(/resource/images/pc/reservation/icon_plus.gif) 2px center no-repeat;}
+
+	/*예약_E,F*/
+	.productList{margin-top: 40px; padding-top: 40px; border-top: 1px dotted #e6e3df;}
+	.productList h2{margin-bottom:14px; font-size:16px; color: rgba(0,0,0,0.8);}
+	.productList ul li{float: left; width: 50%; margin-bottom: 8px;}
+	.selectChoice p.title{font-size: 18px; color: #9c836a; font-weight: 300;}
+	.selectChoice p.desc{margin: 18px 0 35px; line-height: 22px;}
+
+	/*payment*/
+	.paymentWrap h2{margin-bottom: 14px; font-size: 16px; color: rgba(0,0,0,0.8);}
+	.paymentWrap > div{padding-top: 55px;}
+	.paymentWrap > div:first-of-type{padding-top: 0; margin-top: 10px;}
+	.paymentForm {position:relative;}
+	.paymentForm > div.mt0 {margin-top:-20px;}
+	.paymentForm p.sub{color: rgba(0,0,0,0.65);}
+	.paymentForm .formImportant{position: absolute; top: 0; right: 0; font-size: 14px; color: #666;}
+	.paymentForm .color{color: #9c836a;}
+	.paymentForm dl{margin-top: 20px;}
+	.paymentForm dt{color: #9c836a;}
+	.paymentForm dd{margin-top: 5px;}
+	.paymentForm .left { float:left; width:50%; padding-right:8px;}
+	.paymentForm .right { float:right; width:50%; padding-left:8px;}
+	.paymentForm [class*=nameType] dd { font-size:0;}
+	.paymentForm .nameType .inp {width:100%;}
+	.paymentForm .nameType1 .inp { width:261px; margin-right:8px;}
+	.paymentForm .nameType1 .selectBox { width:123px;}
+	.paymentForm .nameType2 .inp { width:198px;}
+	.paymentForm .nameType2 .inp + .inp {width: 186px; margin-left:8px;}
+	.paymentForm .birthday dd { font-size:0;}
+	.paymentForm .birthday dd>div:nth-of-type(1){width: 126px;}
+	.paymentForm .birthday dd>div:nth-of-type(2){width: 127px;}
+	.paymentForm .birthday dd>div:nth-of-type(3){width: 123px;}
+	.paymentForm .birthday .ui-select-wrapper ~ * { margin-left:8px;}
+	.paymentForm .phone dd { font-size:0;}
+	.paymentForm .phone .ui-select-wrapper { width:122px; margin-right:8px;}
+	.paymentForm .phone dd span { display:inline-block; width:18px; font-size:14px; color:#000; line-height:46px; vertical-align:middle; text-align:center;}
+	.paymentForm .phone .inp { width:122px;}
+	.paymentForm .email .inp{display:inline-block;width: 392px;}
+	.paymentForm .email .smallText {display:inline-block;width:390px;margin-left:13px;}
+	.paymentForm .request .ui-select-wrapper{width: 100%;}
+	.paymentForm .request .title{position: relative; padding-right: 83px; margin: 8px 0;}
+	.paymentForm .request .inp{width: 100%;}
+	.paymentForm .request .title .btn{position: absolute; top: 0; right: 0;}
+	.paymentForm .request textarea{display: block; resize: none; width: 100%; height: 160px; padding: 12px; box-sizing: border-box; border: 1px solid #e6e3df; overflow-y: auto;}
+
+	.paymentOption .radioBox{width: 396px; padding: 0;}
+	.paymentOption .radioBox:first-child{float: left;}
+	.paymentOption .radioBox input{top: 15px; left: 16px; cursor: pointer;}
+	.paymentOption .radioBox label{display: block; width: 100%; padding: 15px 16px 15px 54px; font-weight: 300; line-height: 24px; border: 1px solid #e6e3df; cursor: pointer; transition: 0.1s;}
+	.paymentOption .radioBox label:after{left: 16px; width: 24px; height: 24px; margin-top: -12px; background:url('/resource/images/pc/common/icon/icon_radio2.png') no-repeat; cursor: pointer;}
+	.paymentOption .radioBox input:checked + label{color: #9c836a; border: 1px solid #9c836a;}
+	.paymentOption .radioBox input:checked + label:after{background-position: 0 -24px;}
+	.paymentOption .textBox{margin-top: 24px; border: 1px solid #e6e3df;}
+	.paymentOption .textBox>.checkbox2{width: 100%; padding: 15px 16px 15px 25px; background-color: #f9f9f9;}
+	.paymentOption .textBox>.checkbox2 label{color: rgba(0,0,0,0.8); font-size: 16px; font-weight: 300;}
+	.paymentOption .textBox>.checkbox2 label:after{right: 16px; left: unset;}
+	.paymentOption .textBox .txtArea{padding:  16px 25px; line-height: 22px;}
+
+	.paymentTerm .termArea{border-bottom: 0; padding-bottom: 0;}
+	.paymentTerm .termArea h3{color: rgba(0,0,0,0.8);}
+	.paymentTerm .termArea > div{position: relative; margin-top: 26px;}
+	.paymentTerm .termArea .termTxt{height: 126px; padding:  19px 25px; line-height: 22px; background-color: #f9f9f9;}
+	.paymentTerm .termArea .agreeWrap {position: absolute; top: 0; right: 0;text-align:right;}
+	.paymentTerm .termArea .agreeWrap .radioBox + .radioBox {margin-left:22px;}
+	
+	.membership .jsSwiperMotion .slick-initialized { margin-left:-8px;}
+	.membership .jsSwiperMotion .slick-slide { margin-left:8px;}
+	.membership .membershipCard{width:100%; height: 122px; padding:0; background-size: 55px auto; border-radius: 6px; font-family: 'Roboto';}
+	.membership .membershipCard p{font-size: 14px; padding: 32px 0 22px; font-weight: 500;}
+	.membership .membershipCard strong{display: block; font-size: 12px; line-height: 1;font-weight: 500;}
+
+	table.discount{margin-top: 26px;}
+	table.discount tbody td{ line-height: 26px; padding: 0;}
+	table.discount tbody td:nth-of-type(1){}
+	table.discount tbody td:nth-of-type(2){text-align: right; font-weight: 300;}
+	table.discount tbody td:nth-of-type(3){text-align: right;}
+	table.discount tbody tr:last-of-type >td{padding-bottom: 20px;}
+	table.discount tbody td.type1{color: #dc5b51;}
+	table.discount tbody td.type2{color: #f1924c;}
+	table.discount tbody td.type3{color: #262422;}
+	table.discount tbody td.type4{color: #9c4ac7;}
+	table.discount tfoot{border-top: 1px solid #e6e3df; color: #e66045; font-size: 16px; font-weight: 450;}
+	table.discount tfoot tr > *{padding: 20px 0 0;}
+	table.discount tfoot th{text-align: left; font-weight: 450;}
+	table.discount tfoot td{text-align: right;}
+
+	.point .inp{width: 281px;}
+	.point .btn{width: 102px;margin-left:5px;padding:0 10px;}
+	
+	.rullBox .dotList {padding:30px 35px;background:#f9f9f9;}
+	.rullBox li + li {margin-top:5px;}
+	.rullBox li em {color:#e66045;}
+	
+/* add my reservation style */
+.inp input#check_in,
+.inp input#check_out{ width: 40%; padding: 0 12px;}
+.selectBox{ width: 100%; height: 48px; line-height: 48px; border: none; border: 1px solid #e6e3df; padding: 0 12px; padding-right: 12px; font: initial;}
+.payment_point_box{ display: none;}
+.payment_point_block{margin-top: 14px; font-size: 16px; color: rgba(0,0,0,0.8);}
+.payment_point_block label{
+    width: 20%;
+    display: inline-block;
+}
+.payment_point_block input{
+    width: 30%;
+    height: 48px;
+    line-height: 48px;
+    border: none;
+    border: 1px solid #e6e3df;
+    padding: 0 12px;
+    padding-right: 12px;
+    font: initial;
+}
+.productListBox input{ border: none; background: none; width: auto; display: inline;}
+
+/* 예약리스트의 타입선택 */
+.offers .rsvtype{}
+.offers .rsvtype > div{ }
+.offers .rsvtype > div:after{ content:''; display: block; clear: both}
+.offers .rsvtype .txt{ min-height: auto; padding: 0; overflow: hidden; font-size: 13px; background: #fff;}
+.offers .rsvtype a{
+    display: block;
+    position: relative;
+    width: 256px;
+    float: left;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+.offers .rsvtype a.on:after{
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #9c836a;
+}
+.offers .rsvtype a:hover{
+    border: 1px solid #9c836a;}
+.offers .rsvtype strong{
+    display: block;
+    height: 76px;
+    padding: 15px 24px;
+    font-size: 15px;
+    background: #f9f9f9;
+}
+.offers .rsvtype span{
+    display: block;
+}
+.offers .rsvtype .type_tit{
+    height: 46px;
+    overflow: hidden;
+    font-weight: 450;
+    font-size: 16px;
+    color: rgba(0,0,0,0.85);
+    line-height: 22px;
+    white-space: normal;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.offers .rsvtype .type_content{
+    height: auto;
+    padding: 15px 24px;
+    margin: 0;
+}
+

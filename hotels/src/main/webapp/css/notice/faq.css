@@ -1,0 +1,383 @@
+@charset "UTF-8";
+
+.faqWrap {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 80px 160px;
+}
+#container {
+    min-width: 1280px;
+    min-height: 100%;
+    padding-top: 48px;
+    padding-bottom: 183px;
+    margin-bottom: -183px;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 1280px;
+    height: 48px;
+    z-index: 1000;
+    background: #21201e;
+    transition: top 0.2s ease-in-out;
+}
+ element.style {
+    margin-left: 0px;
+}
+#headerWrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 1280px;
+    height: 48px;
+    z-index: 10;
+    background: #21201e;
+    transition: top .3s ease;
+}
+
+article, aside, hgroup, header, footer, figure, figcaption, nav, section {
+    display: block;
+}
+a:link, a:visited, a:hover, a, active, a:focus {
+    text-decoration: none;
+    cursor: pointer;
+}
+div.faqWrap ul.categoryIcon li:nth-of-type(1) a:hover, a:link, a:visited, active, a:focus{
+      opacity: 1.0;
+}
+div.faqWrap ul.categoryIcon li:nth-of-type(2) a:hover, a:link, a:visited, active, a:focus{
+      opacity: 1.0;
+}
+div.faqWrap ul.categoryIcon li:nth-of-type(3) a:hover, a:link, a:visited, active, a:focus {
+    opacity: 1.0;
+}
+div.faqWrap ul.categoryIcon li:nth-of-type(4) a:hover, a:link, a:visited, active, a:focus { 
+    opacity: 1.0;
+}
+div.faqWrap ul.categoryIcon li:nth-of-type(5) a:hover, a:link, a:visited, active, a:focus {    
+    opacity: 1.0;
+}
+div.faqWrap ul.categoryIcon li:nth-of-type(5){
+    opacity: 1.0;
+}
+
+ul.categoryIcon li a{
+    display: block;
+    width: 100%;
+    height: 89px;
+    color: #9c836a;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    opacity: 0.4;
+    transition: 0.1s;
+    text-transform: uppercase;
+}
+ul.categoryIcon {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-bottom: 1px solid #f4f2ef;
+}
+ol, ul {
+    list-style: none;
+}
+
+.rightButton {
+    position: relative;
+}
+.btn.small {
+    min-width: auto;
+    padding: 0 24px;
+    font-size: 14px;
+    height: 48px;
+    line-height: 46px;
+}
+.rightButton a {
+    position: absolute;
+    bottom: 65px;
+    right: 0;
+}
+.btn {
+    display: inline-block;
+    border: 1px solid #9c836a;
+    vertical-align: middle;
+    font-weight: 300;
+    text-align: center;
+    background: #fff;
+    transition: all .3s ease;
+}
+.btn span {
+    color: #9c836a;
+    font-weight: 300;
+}
+
+user agent stylesheet
+div {
+    display: block;
+}
+
+
+div.searchTab div.inp input {
+    height: 40px;
+    line-height: 38px;
+    padding: 0 40px 0 12px;
+}
+.utilMenu .searchTab input {
+    width: 352px;
+}
+.inp input {
+    border: 1px solid #e6e3df;
+    font-size: 14px;
+    font-weight: 200;
+    outline: 0;
+    transition: all .3s ease;
+}
+input {
+    font-family: 'Noto Sans', sans-serif;
+}
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+   
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+}
+input, select {
+    color: inherit;
+    font: inherit;
+    box-sizing: border-box;
+}
+.subGnb {
+    position: fixed;
+    top: 48px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    border-bottom: 1px solid #e6e3df;
+    background: #fff;
+    transition: top .3s ease;
+    overflow: hidden;
+}
+ul.categoryIcon li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+}
+faq내용들부분
+.utilMenu {
+    min-height: 40px;
+    margin: 55px 0 24px;
+    position: relative;
+}
+
+	FAQ
+	.faqWrap{width: 1280px; margin: 0 auto; padding: 0 80px 160px;}
+	.faqWrap h1 { padding:59px 0 58px; font-weight:100; font-size:30px; line-height:40px; color: rgba(0,0,0,0.8);}
+	.faqWrap h1 span { display:block; padding-bottom:13px; font-size:16px; color:#9c836a; font-weight:450;}
+	div.faqWrap ul.categoryIcon li a {color:#857b71; }
+	div.faqWrap ul.categoryIcon li a span{margin-bottom:18px;background-image:url('/images/notice/icon_faq_category.png');}
+	div.faqWrap ul.categoryIcon li:nth-of-type(1) a{color:#9c836a;}
+	div.faqWrap ul.categoryIcon li:nth-of-type(2) a span{background-position-y: -24px;}
+	div.faqWrap ul.categoryIcon li:nth-of-type(3) a span{background-position-y: -48px;}
+	div.faqWrap ul.categoryIcon li:nth-of-type(4) a span{background-position-y: -72px;}
+	div.faqWrap ul.categoryIcon li:nth-of-type(5) a span{background-position-y: -96px;}
+	div.faqWrap ul.categoryIcon li:nth-of-type(6) a span{background-position-y: -120px;}
+	div.faqWrap ul.categoryIcon li:nth-of-type(7) a span{background-position-y: -144px;}
+	
+	.utilMenu{min-height:40px;margin: 55px 0 24px; position: relative;}
+	.utilMenu .searchTab{position: absolute; top: 0; right: 0; margin-top: 0;}
+	.utilMenu .searchTab input{	width: 352px;}
+	.utilMenu .paginate{margin-top: 60px;}
+
+	ul.faqTab{border-left: 0;}
+	ul.faqTab li{float: left; height: 40px; margin-right: 22px;}
+	ul.faqTab li a{height: 40px; font-size: 16px; font-weight: 300; color: #999; line-height: 40px; text-transform:uppercase;}
+	ul.faqTab li:last-of-type{margin-right: 0;}
+	ul.faqTab li.on a{color: #9c836a; text-decoration: underline;}
+
+	ul.faqList{border-top: 1px solid #f4f2ef;}
+	ul.faqList li{border-bottom: 1px solid #f4f2ef;}
+	ul.faqList li .txtQ{position: relative; display: block; padding: 23px 0; width: 100%;}
+	ul.faqList li .txtQ > span{float: left; font-size: 16px; line-height: 24px; height: 24px; vertical-align: top;}
+	ul.faqList li .txtQ > span:first-child{width: 70px; padding: 0 30px 0 24px; font-family: 'Roboto'; font-weight: 500; color: #9c836a; font-size: 24px;}
+	ul.faqList li .txtQ > span.category{color: #9c836a;}
+	ul.faqList li .txtQ > span:last-child{max-width: 940px; margin-left: 3px; color: #666; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+	ul.faqList li .txtQ:before{display: block; content: ''; position: absolute; top: 31px; right: 24px; width: 15px; height: 8px; background: url(/resource/images/pc/common/btn/btn_faq.png) 0 0 no-repeat; background-position: 0 -8px;}
+	ul.faqList li .txtA{display: none; padding: 40px 70px; background-color: #f9f9f9;}
+	ul.faqList li .txtA p{line-height: 24px; color: #999; font-weight: 300;}
+	ul.faqList li .txtQ.on{border: 1px solid #9c836a;}
+	ul.faqList li .txtQ.on > span{margin-top: -1px;}
+	ul.faqList li .txtQ.on > span:first-child{margin-left: -1px;}
+	ul.faqList li .txtQ.on:before{top: 30px; right: 23px; background-position: 0 0;}
+
+ul.categoryIcon li a span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto 12px;
+    background: url(/images/notice/icon_reservation.png) center 0 no-repeat;
+}
+
+.subGnb {
+    position: fixed;
+    top: 48px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    border-bottom: 1px solid #e6e3df;
+    background: #fff;
+    transition: top .3s ease;
+    overflow: hidden;
+}
+하단부분
+.utilMenu {
+    min-height: 40px;
+    margin: 55px 0 24px;
+    position: relative;
+}
+
+input {
+    font-family: 'Noto Sans', sans-serif;
+}
+img, select, input, button {
+    vertical-align: middle;
+}
+
+철자 데이터 등 설명
+element.style {
+    display: none;
+}
+address, i {
+    font-style: normal;
+}
+
+
+문의 내용 검색 부분
+div.searchTab div.inp input {
+    height: 40px;
+    line-height: 38px;
+    padding: 0 40px 0 12px;
+}
+.utilMenu .searchTab input {
+    width: 352px;
+}
+검색 아이콘
+div.searchTab div.inp button.btnSearch {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 38px;
+    height: 38px;
+    text-indent: -9999px;
+    background: url(/images/notice/btn_input_search.png) center no-repeat;
+}
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    overflow: visible;
+    cursor: pointer;
+    line-height: 1;
+}
+button {
+    appearance: auto;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+.clearFixed:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+div.searchTab div.inp button.btnSearch {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 38px;
+    height: 38px;
+    text-indent: -9999px;
+    background: url(/images/notice/btn_input_search.png) center no-repeat;
+}
+
+
+p {
+    display: block;
+ 	/* margin: 40px; */
+ 	font-size: 16px;
+    padding: 55px 105px 55px 172px;
+ 
+}
+
+.accordion {
+  background: transparent;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+ .accordion:hover {
+  background-color: #ccc; 
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.accordion .listTit {
+    display: table-cell;
+    width: 145px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.accordion .opValue {
+    display: table-cell;
+    width: auto;
+    font-size: 18px;
+    line-height: inherit;
+    padding: 0 50px 0 25px;
+    word-break: break-all;
+}
+.accordion .opValue {
+    margin-left: 24px;
+    letter-spacing: -.01em;
+}
+.lastdiv{
+    padding:100px;
+    font-weight: 100px;
+    font-size: 30px;
+    line-height: 1.2em;
+}

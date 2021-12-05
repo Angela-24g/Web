@@ -1,0 +1,51 @@
+@charset "UTF-8";
+:root{
+	/* color */ 
+	--brown-color: #9c836a;
+	--brown-dark-color: #53352c;
+	--brown-light-color: #e6e3df;
+	--black-color: #333;
+	--black-white-color: #666;
+	--red-color:#e66045;
+	/* font-size */
+	--large-size: 30px;
+	--midium-size: 16px;
+}
+/* contTitle */
+.contTitle{ padding:59px 0 58px; font-weight:100; font-size:var(--large-size); line-height:40px; text-transform:uppercase;}
+.contTitle span{ padding-bottom:13px; font-size:var(--midium-size); color:var(--brown-color); font-weight: bold;}
+
+/* tapBox */
+.tapBox{width:100%;}
+.tapBox ul{display:table; width:100%; table-layout:fixed; height:48px }
+.tapBox ul li{width:50%; display:table-cell; text-align: center; vertical-align: middle; border-top:1px solid var(--brown-light-color); border-left:1px solid var(--brown-light-color);  border-bottom:1px solid var(--brown-color);}
+/* on(클릭된것) */
+.tapBox ul .on{border:1px solid var(--brown-color); border-bottom:none;}
+
+/* mypointInfo */
+.mypointInfo dl{float:left; margin-bottom: 48px; width:25%; padding:19px 24px 14px; border:1px solid var(--brown-light-color); }
+.mypointInfo dl dt{font-size:var(--midium-size); color:var(--black-color); font-weight:300;}
+.mypointInfo dl dd{ margin-top: 12px; height: 35px;font-family: 'Roboto'; font-size:var(--large-size); text-align: right; font-weight:500;}
+
+/* listNone */
+.listNone{text-align:center; padding: 40px 0; color:var(--brown-color);} 
+
+/* cautionBox */
+.cautionBox{border: 1px solid #e6e3df;}
+.cautionBox h2{height: 56px; padding:15px 16px; font-weight: 300; font-size:var(--midium-size); color:var(--red-color);}
+.cautionBox ul{padding: 25px 34px; background: #fff;}
+.cautionBox ul li{list-style:square; line-height: 2;}
+
+/**/
+.coupon{margin-top:200px;}
+.coupon ul{display:flex; justify-content:space-between; flex-wrap:wrap;}
+.coupon .couponCard{border: 1px solid var(--brown-light-color); padding: 20px; width: 300px; margin: 20px; height: 150px; background-color: white;}
+.couponCard img{width:20px;}
+.couponCard_point{display:flex; justify-content:space-between; margin-bottom: 20px;}
+.couponCard_point h2{font-size: 24px; color: var(--brown-color);}
+
+
+
+
+
+

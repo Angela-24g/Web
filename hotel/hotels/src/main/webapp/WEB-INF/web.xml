@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<!-- 스프링서블릿설정 -->
+	<servlet>
+		<servlet-name>dispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextClass</param-name>
+			<param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
+		</init-param>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>
+				config.MvcConfig
+				config.BeanConfig
+				config.MyBatisConfig
+			</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+
+		<multipart-config><!-- 스프링에서 업로드한 파일을 가지고 있는 객체 -->
+			<location>/upload</location>
+			<max-file-size>5242880</max-file-size><!-- 5MB --><!-- 각각 개별 파일사이즈 -->
+			<max-request-size>20971520</max-request-size><!-- 20MB --><!-- 한번에 들어오는 모든파일사이즈 -->
+			<file-size-threshold>0</file-size-threshold><!-- 메모리에서 가지고 있는 파일갯수 -->
+		</multipart-config>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>dispatcher</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<!-- 필터 -->
+
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>com.delluna.hotels.env.MyCharsetEncodingFilter</filter-class>
+	</filter>
+	
+<!-- 	<filter>
+		<filter-name>loginFilter</filter-name>
+		<filter-class>com.delluna.hotels.env.LoginFilter</filter-class>
+	</filter> -->
+
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+<!-- 	<filter-mapping>
+		<filter-name>loginFilter</filter-name>
+		<url-pattern>/board</url-pattern>
+	</filter-mapping>
+ -->
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+	
+	<!-- aws 배포를 위한 tomcat8.5 jdbc리소스 -->
+	<resource-ref>
+	    <description>DB Connection</description>
+	    <res-ref-name>jdbc/TestDB</res-ref-name>
+	    <res-type>javax.sql.DataSource</res-type>
+	    <res-auth>Container</res-auth>
+	</resource-ref>
+</web-app>

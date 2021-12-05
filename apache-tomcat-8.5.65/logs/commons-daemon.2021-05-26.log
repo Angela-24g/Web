@@ -1,0 +1,30 @@
+[2021-05-26 00:22:21] [info]  [ 6704] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-05-26 00:22:21] [info]  [ 6704] Installing service 'Tomcat8' name 'Apache Tomcat 8.5 Tomcat8'.
+[2021-05-26 00:22:21] [info]  [ 6704] Service 'Tomcat8' installed.
+[2021-05-26 00:22:21] [info]  [ 6704] Apache Commons Daemon procrun finished.
+[2021-05-26 00:22:22] [info]  [ 9356] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-05-26 00:22:22] [info]  [ 9356] Updating service...
+[2021-05-26 00:22:22] [info]  [ 9356] Updated service 'Tomcat8'.
+[2021-05-26 00:22:22] [info]  [ 9356] Finished updating service 'Tomcat8'.
+[2021-05-26 00:22:22] [info]  [ 9356] Apache Commons Daemon procrun finished.
+[2021-05-26 00:22:22] [info]  [12048] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-05-26 00:22:22] [info]  [12048] Updating service...
+[2021-05-26 00:22:22] [info]  [12048] Updated service 'Tomcat8'.
+[2021-05-26 00:22:22] [info]  [12048] Finished updating service 'Tomcat8'.
+[2021-05-26 00:22:22] [info]  [12048] Apache Commons Daemon procrun finished.
+[2021-05-26 00:22:22] [info]  [ 1532] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-05-26 00:22:22] [info]  [ 1532] Updating service...
+[2021-05-26 00:22:22] [info]  [ 1532] Updated service 'Tomcat8'.
+[2021-05-26 00:22:22] [info]  [ 1532] Finished updating service 'Tomcat8'.
+[2021-05-26 00:22:22] [info]  [ 1532] Apache Commons Daemon procrun finished.
+[2021-05-26 00:22:22] [info]  [ 3840] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-05-26 00:22:22] [info]  [ 3840] Updating service...
+[2021-05-26 00:22:22] [info]  [ 3840] Updated service 'Tomcat8'.
+[2021-05-26 00:22:22] [info]  [ 3840] Finished updating service 'Tomcat8'.
+[2021-05-26 00:22:22] [info]  [ 3840] Apache Commons Daemon procrun finished.
+[2021-05-26 00:25:03] [info]  [ 8508] Apache Commons Daemon procrun (1.2.4.0 64-bit) started.
+[2021-05-26 00:25:03] [info]  [ 8508] Debugging 'Tomcat8' service...
+[2021-05-26 00:25:03] [info]  [ 8508] Starting service...
+[2021-05-26 00:25:04] [info]  [ 8508] Service started in 1124 milliseconds.
+[2021-05-26 00:25:04] [info]  [ 8508] Debug service finished with exit code 0.
+[2021-05-26 00:25:04] [info]  [ 8508] Apache Commons Daemon procrun finished.

@@ -1,0 +1,304 @@
+/* 라이프스타일 타이틀  */
+h1.contTitle {
+    padding: 59px 0 58px;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+h1.contTitle span {
+    display: block;
+    padding-bottom: 13px;
+    font-size: 16px;
+    color: #9c836a;
+    font-weight: 450;
+}
+
+/* 카테고리 wrap */
+.hotelParadiseWrap ul.categoryIcon.poolWrap {
+    width: 400px;
+}
+
+.hotelParadiseWrap ul.categoryIcon {
+    width: 560px;
+    margin-left: -10px;
+}
+
+
+ul.categoryIcon {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-bottom: 1px solid #f4f2ef;
+}
+
+ul.categoryIcon li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+}
+
+ul.categoryIcon li:hover a, ul.categoryIcon li.active a {
+    opacity: 1;
+}
+
+ul.categoryIcon li a {
+    display: block;
+    width: 100%;
+    height: 89px;
+    color: #9c836a;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    opacity: 0.4;
+    transition: 0.1s;
+    text-transform: uppercase;
+}
+
+.hotelParadiseWrap ul.categoryIcon li:nth-of-type(1) a span {
+    margin-bottom: 12px;
+}
+
+.hotelParadiseWrap ul.categoryIcon li a span {
+    background-image: url(/images/lifestyle/icon_category.png);
+    background-position-x: 0;
+}
+
+ul.categoryIcon li a span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto 12px;
+    background: url(/images/lifestyle/icon_category.png) center 0 no-repeat;
+}
+/* tab바 */
+
+/* img 슬라이드 */
+.jsSwiperMotion {}
+.slick-initialized { margin-left:-31px;}
+.slick-slide { overflow:hidden; margin-left:31px;}
+.facilityVisualWrap{ }
+.slick-arrow{position: absolute;bottom:0; width: 32px;height: 17px;font-size: 0;background: url(/images/common/btn_slide_arrow.png) no-repeat; z-index: 9;}
+.slick-prev{left:30px;}
+.slick-next{right:0; background-position: 0 -17px;}
+.slick-dots { position: relative; margin: 24px 0 0; left: 50%; text-align: center; transform: translateX(-50%); font-size: 0; line-height: 17px;}
+.slick-dots li{ display: inline-block; width: 6px; height: 6px; margin: 0 4px; border-radius: 50%; background: #c6c6c6;}
+.slick-dots li.slick-active{ background: #9c836a;}
+/* 상세설명 */
+.detailTextBox {
+    position: relative;
+    margin: 32px 0 40px;
+}
+
+.detailTextBox h2 {
+    font-size: 30px;
+    color: #9c836a;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.detailTextBox .subTit {
+    margin-top: 3px;
+    font-size: 16px;
+    color: #9c836a;
+}
+.detailTextBox .text {
+    margin-top: 20px;
+    color: #666;
+    line-height: 22px;
+}
+.detailInfo {
+    position: relative;
+    padding: 40px 0;
+    border-top: 1px solid #e6e3df;
+}
+.detailInfo h3 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: #333;
+}
+.detailInfo .infoDetail {
+    overflow: hidden;
+    margin-top: 8px;
+}
+.detailInfo .infoDetail > dl.type3 {
+    width: 300px;
+}
+.detailInfo .infoDetail > dl {
+    float: left;
+    width: 256px;
+}
+.detailInfo .infoDetail > dl > dt {
+    margin-bottom: 3px;
+    font-size: 16px;
+    color: #9c836a;
+    font-weight: 300;
+    line-height: 30px;
+}
+.detailInfo .infoDetail > dl > dd, .detailInfo .infoDetail > dl > dd *:not(.smallText) {
+    line-height: 28px;
+}
+.detailInfo .infoDetail > dl + dl {
+    margin-left: 32px;
+}
+/* 요금안내 */
+.detailInfo.priceInfo {
+    padding-top: 45px;
+}
+.detailInfo .priceList {
+    margin-bottom: 0;
+}
+table.priceList {
+    width: 100%;
+    margin: 22px 0 32px;
+    border-top: 1px solid #9b8369;
+    border-bottom: 1px solid #9b8369;
+}
+table.priceList thead th {
+    position: relative;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: #9c836a;
+    line-height: 22px;
+}
+table.priceList thead th:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 16px;
+    background-color: #e6e3df;
+    transform: translateY(-50%);
+}
+table.priceList thead + tbody tr:first-child {
+    border-top: 1px solid #e6e2df;
+}
+table.priceList thead + tbody tr {
+    border-top: 1px solid #f4f2ef;
+}
+table.priceList .tbg {
+    font-size: 14px;
+    color: #333;
+    font-weight: 300;
+    background: #f9f9f9;
+}
+table.priceList tbody td {
+    padding: 18px 10px;
+    text-align: center;
+}
+table.priceList tbody td.sort {
+    font-weight: 300;
+    color: #333;
+}
+.detailInfo.priceInfo .smallText {
+    color: #999;
+}
+.detailInfo .priceList + * {
+    margin-top: 10px;
+}
+table + .smallText {
+    margin-top: 10px;
+}
+.smallText {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+    padding-left: 8px;
+    text-indent: -8px;
+}
+.tr {
+    text-align: right !important;
+}
+.detailInfo.priceInfo + .detailInfo {
+    padding-top: 8px;
+    border-top: 0 none;
+}
+.hotelParadiseWrap .incFacility .table{
+    display: table;
+    width: 1152px;
+    table-layout: fixed;
+    margin-left: -32px;
+}
+.hotelParadiseWrap .incFacility .table > li {
+    display: table-cell;
+    padding-left: 32px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.margin .keyVisual.incFacility{
+	margin-left: 0px;
+}
+ul li .img {
+    background: url(/images/common/logo_transparent.png) #f9f9f9 no-repeat 50% 50%;
+}
+.hotelParadiseWrap .incFacility h4 {
+    margin-top: 20px;
+    color: #333;
+    font-weight: 450;
+}
+.hotelParadiseWrap .incFacility p.text {
+    height: auto;
+    margin-top: 10px;
+    letter-spacing: -0.02em;
+    line-height: 24px;
+}
+/* 안내사항 */
+.detailInfo + .cautionBox {
+    margin-top: 15px;
+}
+.cautionBox {
+    border: 1px solid #e6e3df;
+    background: #f9f9f9;
+}
+.cautionBox.type2 h2 {
+    color: #9c836a !important;
+}
+.cautionBox h2 {
+    font-size: 16px !important;
+    height: 56px;
+    padding: 0 16px !important;
+    line-height: 56px;
+    color: #e66045 !important;
+}
+.cautionBox.type2 h2:before {
+    background-position: 0 -20px;
+}
+.cautionBox h2:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-top: -3px;
+    margin-right: 8px;
+    vertical-align: middle;
+    background: url(/images/common/icon_caution.png) no-repeat;
+}
+.cautionBox .dotList {
+    padding: 25px 34px;
+    background: #fff;
+}
+.dotList > * {
+    position: relative;
+    padding-left: 12px;
+}
+.dotList > *:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #898989;
+    vertical-align: top;
+}
+.cautionBox .dotList li + li {
+    margin-top: 10px;
+}
+.hotelParadiseWrap .incFacility .img img {
+    width: 100%;
+}
+ 

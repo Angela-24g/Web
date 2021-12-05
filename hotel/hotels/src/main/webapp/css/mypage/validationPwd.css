@@ -1,0 +1,308 @@
+@charset "UTF-8";
+:root{
+	/* color */ 
+	--brown-color: #9c836a;
+	--brown-dark-color: #53352c;
+	--brown-light-color: #e6e3df;
+	--black-color: #333;
+	--black-white-color: #666;
+	--red-color:#e66045;
+	/* font-size */
+	--large-size: 30px;
+	--midium-size: 16px;
+}
+/* contTitle */
+.contTitle{ padding:59px 0 58px; font-weight:100; font-size:var(--large-size); line-height:40px; text-transform:uppercase;}
+.contTitle span{ padding-bottom:13px; font-size:var(--midium-size); color:var(--brown-color); font-weight: bold;}
+
+/* loginBox */
+.loginBox{width:1280px;margin:0 auto;padding-bottom:58px;}
+.loginBox form{width:50%;padding-right:80px;}
+.loginBox input{width:100%;height:48px;border:1px solid #e6e3df;padding:0 12px;font-size:14px;font-weight:200;outline:none;margin-bottom: 10px;}
+.loginBox input:nth-child(1){background-color:#FBFAFD;}
+.loginBox input:nth-child(3){background-color:var(--brown-color);border:none;color:white;font-size:20px;font-weight:bold; transition: all .3s ease;}
+
+.loginBox input:nth-child(3):hover{ background-color:var(--brown-dark-color); transition: all .3s ease;}
+.loginBox input:nth-child(1):focus, .loginBox input:nth-child(2):focus{border: 1px solid var(--brown-color); transition: all .3s ease;}
+
+
+/* form 시작 */
+.innerBox{padding:0;}
+
+.fullBg {
+    padding: 51px 0 104px;
+    background: #f9f9f9;
+}
+.formJoinWrap > div:first-child, .formJoinWrap > form#form1 > div {
+    margin-top: 0;
+}
+.formJoinWrap > div, .formJoinWrap > form > div {
+    margin-top: 43px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #e6e3df;
+}
+.formJoin {
+    position: relative;
+}
+.formJoinWrap h2 {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 16px;
+}
+.formJoinWrap .formImportant {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    color: #666;
+}
+.formInfo .left {
+    float: left;
+    width: 50%;
+    padding-right: 17px;
+}
+.formInfo {
+    position: relative;
+}
+.formJoinWrap .color {
+    color: #9c836a;
+}
+.formJoinWrap dl {
+    margin-bottom: 20px;
+}
+.formJoin dl {
+    margin-bottom: 0;
+}
+.formJoin:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.formJoinWrap dt {
+    font-size: 14px;
+    color: #9c836a;
+}
+.formJoin .id dd {
+    width: 50%;
+    padding-right: 17px;
+}
+.formJoin .pwd {
+    float: left;
+    width: 50%;
+    padding-right: 17px;
+    margin-top: 20px;
+}
+.formJoin .pwd + .pwd {
+    padding-left: 17px;
+    padding-right: 0;
+}
+.formInfo .birthday dd {
+    font-size: 0;
+}
+.formInfo .birthday .ui-select-wrapper {
+    width: 175px;
+}
+.ui-select-wrapper .disabled .ui-select-trigger {
+    border: 1px solid #e6e3df;
+    color: #666;
+    cursor: inherit;
+    background: #f9f9f9;
+}
+.ui-select-wrapper {
+    position: relative;
+    display: inline-block;
+    height: 48px;
+    min-width: 100px;
+    user-select: none;
+    vertical-align: middle;
+    background: #fff;
+}
+.ui-select-trigger {
+    display: inline-block;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #e6e3df;
+    padding: 0 39px 0 15px;
+    line-height: 48px;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.formInfo .nameType1 .inp {
+    margin-right: 8px;
+}
+.formInfo .nameType1 .selectBox {
+    width: 159px;
+}
+.formJoinWrap dd {
+    position: relative;
+    margin-top: 5px;
+}
+.formJoinWrap .inp {
+    width: 100%;
+}
+.inp {
+    display: inline-block;
+    position: relative;
+}
+.idDl{
+    width: 50%;
+    padding-right: 17px;
+    margin-top: 20px;
+}
+
+.formInfo .nameType1 .selectBox {
+    width: 159px;
+}
+.inp .btnDelete {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 18px;
+    height: 18px;
+    margin-top: -9px;
+    font-size: 0;
+    background: url(/images/join/joinbtn1.png) no-repeat;
+}
+.ui-select-options {
+    overflow: hidden;
+    overflow-y: auto;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    max-height: 280px;
+    min-width: 100%;
+    border: 1px solid #e6e3df;
+    border-top: 0;
+    background: #fff;
+}
+.errorText {
+    display: none;
+    color: #e66045;
+    font-size: 14px;
+}
+.formInfo .email p {
+    padding: 10px 0;
+    font-size: 12px;
+    color: rgba(0,0,0,0.4);
+}
+.formInfo .right {
+    float: right;
+    width: 50%;
+    padding-left: 17px;
+}
+.formInfo [class*=nameType] dd {
+    font-size: 0;
+}
+.formInfo .nameType2 .inp {
+    width: 267px;
+}
+.formInfo .nameType2 .inp + .inp {
+    margin-left: 9px;
+}
+.formInfo .address .post {
+    position: relative;
+    padding-right: 128px;
+}
+.inp input[readonly='readonly'] {
+    border: 1px solid #e6e3df;
+    color: #666;
+    background: #f9f9f9;
+}
+.inp input:disabled + .btnDelete {
+    display: none !important;
+}
+.formInfo .address .post .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    padding: 0;
+    text-align: center;
+}
+.formInfo .birthday .ui-select-wrapper ~ * {
+    margin-left: 9px;
+}
+.btn {
+    display: inline-block;
+    min-width: 192px;
+    height: 56px;
+    padding: 0 32px;
+    border: 1px solid #9c836a;
+    line-height: 56px;
+    font-size: 18px;
+    vertical-align: middle;
+    font-weight: 300;
+    color: #9c836a;
+    text-align: center;
+    background: #fff;
+    transition: all .3s ease;
+}
+.btn:hover{
+	background-color: #9c836a;
+}
+.btn:hover span{
+	color: #fff;
+}
+.btn.small {
+    min-width: auto;
+    padding: 0 24px;
+    font-size: 14px;
+    height: 48px;
+    line-height: 46px;
+}
+.btn span {
+    color: #9c836a;
+    font-weight: 300;
+}
+.formInfo .address .post ~ .inp {
+    margin-top: 8px;
+}
+.formInfo .address .inp:not(:first-child) {
+    margin-top: 8px;
+}
+.btnJoin {
+    margin-top: 40px;
+    text-align: center;
+}
+.btnJoin .btn {
+    width: 192px;
+    margin: 0 4px;
+}
+.btn:disabled, .btn:disabled:hover, .btn.disabled, .btn.disabled:hover {
+    border: 1px solid #c4bfbb;
+    color: rgba(255,255,255,0.65);
+    cursor: inherit;
+    background: #c4bfbb;
+}
+.formJoin .email dd {
+    width: 50%;
+    padding-right: 17px;
+}
+.formJoin .code dd {
+    width: 50%;
+    padding-right: 17px;
+}
+.email{
+    margin-bottom: 20px !important;
+}
+.email_in {
+    position: relative;
+    padding-right: 128px;
+}
+.email_in .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    padding: 0;
+    text-align: center;
+}
+input.btn:hover{
+	color:#fff;
+}

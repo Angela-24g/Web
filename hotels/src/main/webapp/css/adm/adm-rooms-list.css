@@ -1,0 +1,356 @@
+@charset "UTF-8";
+:root{
+	/* color */ 
+	--brown-color: #9c836a;
+	--brown-dark-color: #53352c;
+	--brown-light-color: #e6e3df;
+	--black-color: #333;
+	--black-white-color: #666;
+	--red-color:#e66045;
+	/* font-size */
+	--large-size: 30px;
+	--midium-size: 16px;
+}
+
+.wrapper {
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding-top: 48px;
+}
+.wrapper:after{ content:''; display: block; clear: both; }
+/* nav start */
+.adm_nav {
+	width: 100px;
+	height: 100vh;
+	float: left;
+}
+
+.adm_menu {
+	width: 100%;
+	background-color: #fff;
+	border-right: 1px solid #ddd;
+	padding: 40px 0;
+}
+
+.adm_menu_box {
+	width: 100%;
+	line-height: 34px;
+	text-align: center;
+	position: relative;
+}
+
+.adm_menu_box>a {
+	font-size: 15px;
+}
+
+.adm_menu_box>a.on+.adm_menu_2depth {
+	display: block;
+}
+
+.adm_menu_2depth {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 99px;
+	width: 180px;
+	border-left: 1px solid #ddd;
+	/* background-color: #fff; */
+	text-align: left;
+	z-index: 9;
+}
+
+.adm_menu_2depth li {
+	line-height: 34px;
+	background-color: #fff;
+}
+
+.adm_menu_2depth li a {
+	font-size: 14px;
+	display: block;
+	line-height: 34px;
+	padding: 0 10px;
+}
+
+.adm_menu_2depth a strong {
+	font-weight: bold;
+	font-size: 16px;
+}
+.adm_menu a:hover{font-weight: bold;background-color: #ececec;display: block;line-height: 34px;}
+.adm_menu a:hover strong{}
+
+/* nav end */
+/* content start */
+.adm_content{width: calc(100% - 100px); float: left;}
+/* content end */
+/* common btn start */
+.btn_top{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+.btn_wrap{
+    width: auto;
+}
+.btn_wrap li{
+    display: inline-block;
+}
+.view_con{
+    padding: 0 5px;
+}
+.btn_item{
+    padding: 5px 10px;
+    background-color: #9c836a;
+    color: #fff !important;
+}
+/* common btn end */
+/* common form start */
+.form_wrap{ width: 100%; padding: 40px 40px 40px 180px;}
+.form_wrap form{}
+.form_block{
+    width: 600px;
+    line-height: 35px;
+    margin: 0 0 15px;
+}
+.form_block label,
+.form_block input,
+.form_block textarea,
+.form_block select{
+    font-size: 16px;
+    display: inline-block;
+    width: 480px;
+    line-height: 35px;
+    box-sizing: border-box;
+}
+.form_block label{
+    width: 100%;
+}
+.form_block input{
+    border: 1px solid #ddd;
+}
+.form_block textarea{
+    resize: none;
+    border: 1px solid #ddd;
+}
+.form_block select{}
+.form_block input[type="file"]{
+    width: 250px;
+    margin: 0 3px 0 0;
+}
+.form_block input[type="button"]{
+    width: 100px;
+}
+.form_block input[type="checkbox"],
+.form_block input[type="radio"]{
+    width: auto;
+    vertical-align: initial;
+}
+.checkbox_block{
+    display: inline-block;
+    margin-right: 20px;
+}
+.checkbox_block label{
+    width: auto;
+    cursor: pointer;
+}
+.checkbox_block[type="checkbox"]{}
+/* common form end */
+/* common list start */
+.list_wrap{width: 100%;padding: 60px 0 0 20px;}
+.list_wrap form{}
+.list_wrap .list_top{position: relative;}
+.list_wrap .list_total{ font-size: 15px; color: #ddd;}
+.list_total span{ font-size: 15px; color: #ddd; font-weight: bold;}
+.list_table{
+    position: relative;
+    padding: 40px 0 0;
+}
+.list_table table{
+    border-collapse: collapse;
+    border-spacing: 0 5px;
+    table-layout: inherit;
+}
+.list_table thead{
+    border-collapse: collapse;
+    border-spacing: 0 5px;
+}
+.list_table thead .chk_all_box{
+    width: 50px;
+}
+.list_table thead .chk_all{}
+.list_table thead .chk_all_box label{
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.list_table thead .chk_all_box b{} 
+.list_table tbody{
+    border-collapse: collapse;
+    border-spacing: 0 5px;
+}
+.list_table th,
+.list_table td{
+    padding: 15px 0;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 1px solid #ececec;
+    height: 40px;
+}
+.list_table th{}
+.list_table td{
+    font-size: 15px;
+}
+.list_block{}
+.list_block .chk_box{
+    width: 50px;
+}
+.list_block .chk_box label{}
+.list_block .chk_box input{}
+
+.list_block .list_num{}
+.list_block .list_room_num{}
+.list_block .list_room_type{}
+.list_block .list_view{}
+.list_block .list_location{}
+.list_block .list_bedtype{}
+.list_block .list_room_price{}
+.list_block .btn_rez_state{}
+.list_block .btn_rez_list{}
+
+.list_block a{}
+/* common list end */
+/* common view start */
+.view_wrap{min-width: 600px;width: 100%;max-width: 1000px;padding: 20px;margin: 60px 0 0 20px;border: 1px solid #ddd;border-radius: 5px;background-color: #fff;}
+.view_title{
+    font-size: 30px;
+    line-height: 50px;
+}
+.view_info{
+    padding: 10px 5px;
+    margin: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom:  1px solid #ddd;
+    position: relative;
+}
+.view_info_block{}
+.view_info_block span{
+    font-size: 15px;
+}
+.view_info_block strong{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.view_block{
+    padding: 10px 0;
+    border-bottom: 1px solid #fbfafd;
+}
+/* common view end */
+/* common view prev next start */
+.view_pn{
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+}
+.view_pn:after{ content:''; display: block; clear: both;}
+.btn_prev,
+.btn_next{
+    padding: 10px 10px;
+    width: 50%;
+    float: left;
+}
+.pn_tit{
+    font-size: 15px;
+    padding: 5px 10px;
+    margin: 0 10px;
+    background-color: #505050;
+    color: #fff;
+    border-radius: 5px;
+}
+.pn_date{
+    font-size: 12px;
+    color: #ccc;
+}
+.btn_prev{
+    border-right: 1px solid #ddd;
+}
+.btn_prev pn_tit{}
+.btn_prev a{
+    font-size: 17px;
+}
+.btn_prev pn_date{}
+.btn_next{
+    text-align: right;
+}
+.btn_next pn_tit{}
+.btn_next a{
+    font-size: 17px;
+}
+.btn_next pn_date{}
+/* common view prev next end */
+
+/* searchBox */
+.searchBox{width:50%; margin:20px auto;}
+.searchBox form{padding:10px;}
+.searchBox input{width: 150px;}
+.searchBox #bt{width:80px;}
+
+/* pager */
+.pager ul{display:flex; justify-content: center; margin:20px 0;}
+.pager ul li{padding: 0 3px;}
+.selected{color:red;}
+
+/* rooms-mainList 시작*/
+/* Center website */
+#myBtnContainer{
+	margin-top:10px;
+}
+
+h1 {
+  	font-size: 16px;
+}
+
+h4{
+  	font-size: 16px;
+	color:#9c836a;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  width: 33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: inline-block;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #9c836a;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #9c836a;
+   color: white !important;
+}
+/* mainList 끝 */

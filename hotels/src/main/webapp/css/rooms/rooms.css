@@ -1,0 +1,269 @@
+/* 호텔부산  */
+
+.hotelParadiseWrap .roomWrap { padding-bottom:50px;overflow:hidden;}
+.hotelParadiseWrap .roomWrap > h2 { font-weight:450; font-size:16px; color:#333;}
+.hotelParadiseWrap .roomWrap > .text { margin-top:2px; margin-bottom:13px; color:#999;}
+.jsSwiperMotion {
+    display: none;
+    position: relative;
+}
+/* jsSwiperMotion */
+.jsSwiperMotion { display:none; position:relative; }
+.jsSwiperMotion .tit { margin-bottom:12px; font-size:16px; color:#333;}
+.jsSwiperMotion .swiperWrap li { width:260px;}
+.jsSwiperMotion .swiperWrap h2 { margin-bottom:10px; color:#333; font-weight:450; text-transform:uppercase;}
+.jsSwiperMotion .swiperWrap p { color:#666;}
+.jsSwiperMotion.keyVisual .swiperWrap p.img, .jsSwiperMotion.keyVisual .swiperWrap p.img img {width:1120px;height:496px;}
+.leoInfoWrap .jsSwiperMotion.keyVisual .swiperWrap p.img, .leoInfoWrap .jsSwiperMotion.keyVisual .swiperWrap p.img img {height:302px;}
+.jsSwiperMotion.keyVisual .swiperWrap p.img {background:url(/images/common/empty_logo.png) #f9f9f9 no-repeat 50% 50%;}
+.jsSwiperMotion .btnArrow { overflow:hidden; margin-top:24px;}
+.jsSwiperMotion .btnArrow a { display:block; float:left; width:32px; height:17px; font-size:0; background:url('/resource/images/pc/common/btn/btn_slide_arrow.png') no-repeat;}
+.jsSwiperMotion .btnArrow .btnRight { float:right; background-position:0 -17px;}
+
+.jsSwiperMotion .slick-dots { position:absolute; bottom:5px; left:50%; text-align:center; transform:translateX(-50%); font-size:0;}
+.jsSwiperMotion .slick-dots li { display:inline-block; width:6px; height:6px; margin:0 4px; border-radius:50%; background:#c6c6c6;}
+.jsSwiperMotion .slick-dots li.slick-active { background:#9c836a;}
+
+.jsSwiperMotion .swiperArrow { position:absolute; top:0px; right:0;}
+.jsSwiperMotion .swiperArrow [class*=btn] { width:19px; height:19px;}
+.jsSwiperMotion .swiperArrow [class*=btn].slick-disabled span { background-position:0 0;}
+.jsSwiperMotion .swiperArrow .btnLeft span { display:inline-block; width:6px; height:10px; font-size:0; vertical-align: middle; background:url('/images/common/btn_slick_arrow.png') no-repeat 0 -10px;}
+.jsSwiperMotion .swiperArrow .btnRight span { display:inline-block; width:6px; height:10px; font-size:0; vertical-align: middle; transform:rotate(180deg); background:url('/images/common/btn_slick_arrow.png') no-repeat 0 -10px;}
+.jsSwiperMotion .swiperArrow .number { display:inline-block; width:75px; text-align:center; vertical-align: middle; font-weight:300; color:#999;}
+.jsSwiperMotion .swiperArrow .number em { color:#9c836a;}
+
+.jsSwiperMotion.type2 .slick-initialized { margin-left:-32px;}
+.jsSwiperMotion.type2 .slick-slide {margin-left:32px;}
+.offers .jsSwiperMotion.type2 .slick-initialized { margin-left:-16px;}
+.offers .jsSwiperMotion.type2 .slick-slide {width:256px !important;margin-left:16px;}
+.digitalReceipt {width:1120px;margin:0 auto;}
+.digitalReceipt .jsSwiperMotion li > a {display:block;}
+.digitalReceipt .jsSwiperMotion li img {width:100%;}
+/* room list */
+.descBox{ width: 100%; position: relative;}
+.descBox + .descBox{margin-top: 40px;}
+.descBox > *{vertical-align: top;}
+.descBox .imageWrap{ padding-right: 352px; border: 1px solid #d5cabe;}
+.descBox .text{ overflow:hidden; position: absolute; top: 1px; right: 1px; width: 352px; height: 463px; margin:0; padding: 55px 40px 40px 40px; background-color: #fff; transition:all .3s ease;}
+.descBox .textBox .text { opacity:0; visibility:hidden;}
+.descBox p.title{ color: #9c836a; line-height: 24px;transition:all .3s ease; transform:translateY(0px);}
+.descBox p.title span{display: block; margin-bottom: 10px; font-size: 30px; font-weight: 100; line-height: 1;}
+.descBox p.sub{margin-top: 25px; line-height: 22px; color: #999;transition:all .3s ease; transform:translateY(0px);}
+.descBox .info{width: 100%; margin-top: 20px; padding: 15px 0; border-top: 1px solid #f4f2ef; line-height: 22px; transition:all .3s ease; transform:translateY(0px); word-break: keep-all;}
+.descBox .info p{position: relative; margin-top: 7px; padding-left: 65px; line-height: 22px; color: #999;}
+[lang="en"] .descBox .info p {padding-left:80px;}
+.descBox .info p span{position: absolute; top: 0; left: 0; display: block; font-weight: 300; color: #666; vertical-align: top; line-height: 22px;}
+.descBox .btn{position: absolute; left: 40px; bottom: 40px; line-height: 38px; transition:all .3s ease; transform:translateY(0px);}
+
+.descBox .textBox .text.on { opacity:1; visibility:visible;}
+.descBox .textBox .text.on .title,
+.descBox .textBox .text.on .sub,
+.descBox .textBox .text.on .info,
+.descBox .textBox .text.on .btn { transform:translateY(0px);}
+
+.descBox.type2 .info { position:static; padding-top:24px; margin-top:24px; border-top:1px solid #f4f2ef;}
+.descBox.type2 .info > p { position:relative; padding-left:65px;}
+.descBox.type2 .info > p:first-child { padding-top:0; border:0;}
+.descBox.type2 .info > p span { position:absolute; top:0; left:0;}
+.descBox.type2 .btn { position:absolute; bottom:40px; left:0;}
+
+.rightButton{position: relative;}
+.rightButton a{position: absolute; bottom: 65px; right: 0;}
+.rightButton a.arrow:after{display: inline-block; content: ''; width: 16px; height: 7px; margin: 20px 0 0 10px; background: url(/resource/images/pc/common/btn/btn_move.png) 0 0 no-repeat; vertical-align: top; }
+.rightButton a.arrow:hover:after{background-position: 0 -7px;}
+a.btnMoreTxt {position:relative;display:inline-block;margin-top:10px;font-size:14px;color:#9c836a;line-height:20px;border-bottom:1px solid #9c836a;}
+
+.infoDetail .findLink{display: table; height: 23px; padding: 3px 1px 0px; font-weight: 300; color: #9c836a; border-bottom: 1px solid #9c836a;}
+.infoDetail .findLink:before{display: inline-block; content: ''; width: 9px; height: 9px; margin: 5px 6px 0 0; background: url(/resource/images/pc/reservation/icon_plus.gif) 0 0 no-repeat; vertical-align: top;}
+.infoDetail .addTxt{font-size: 12px; color: #999; line-height: 19px; display: block; text-indent: -8px; padding: 7px 0 0 8px;}
+.infoDetail .addTxt > *{line-height: 19px; margin-bottom: 3px;}
+.infoDetail .siteLink > a{display: block; word-break: break-all; text-decoration: underline; line-height: 22px;}
+.infoDetail .siteLink a:after {content: ''; display: inline-block; width: 12px; height: 12px; margin-top: -2px; margin-left: 5px; vertical-align: middle; background: url(/resource/images/pc/common/icon/icon_site_link.png) no-repeat;}
+.detailInfo .swiperWrap p.text{height: auto; letter-spacing: -0.02em;}
+.detailInfo .swiperWrap p.time{margin-top: 10px; font-size: 12px; color: #999;}
+
+.priceList .basicForm tbody th{color: #333;}
+.priceList .basicForm tbody td{font-weight: 200;}
+/* img 슬라이드 */
+.jsSwiperMotion .slick-slider {
+    position: static;
+}
+.jsSwiperMotion .btnArrow {
+    overflow: hidden;
+    margin-top: 24px;
+}
+.jsSwiperMotion .btnArrow a {
+    display: block;
+    float: left;
+    width: 32px;
+    height: 17px;
+    font-size: 0;
+    background: url(/images/common/btn_slide_arrow.png) no-repeat;
+}
+.jsSwiperMotion .btnArrow .btnRight {
+    float: right;
+    background-position: 0 -17px;
+}
+.btn.small2 {
+    min-width: auto;
+    padding: 0 24px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 38px;
+}
+.jsSwiperMotion .slick-slide {
+    overflow: hidden;
+    margin-left: 31px;
+}
+
+/* 객실상세보기 */
+.detailInfo { position:relative; padding:40px 0; border-top:1px solid #e6e3df;}
+.detailInfo h3 { margin-bottom:12px; font-size:16px; color:#333;}
+.detailInfo h3 + .rightLink {top:50px;}
+.detailInfo .infoDetail { overflow:hidden; margin-top:8px;}
+.detailInfo .infoDetail > dl { float:left; width:256px;}
+.detailInfo .infoDetail > dl.type2 { width:516px;}
+.detailInfo .infoDetail > dl.type3 { width:300px;}
+.detailInfo .infoDetail > dl + dl { margin-left:32px;}
+.detailInfo .infoDetail > dl > dt { margin-bottom:3px; font-size:16px; color:#9c836a; font-weight:300; line-height: 30px;}
+.detailInfo .infoDetail dl.tbl > dd, .detailInfo .infoDetail dl.tbl > dt{padding:0;}/* 20190521 추가*/
+.detailInfo .infoDetail > dl > dd, .detailInfo .infoDetail > dl > dd *:not(.smallText) {line-height:28px;}
+.detailInfo .infoDetail > dl > dd p + p {margin-top:10px;}
+.detailInfo .infoDetail > dl > dd .smallText {line-height:22px;padding-left:0;text-indent:0;}
+.detailInfo .infoDetail > dl > dd .smallText br {line-height:0} /* 20190521 추가*/
+.detailInfo .infoDetail > dl > dd table {text-align:left;table-layout:auto;}
+.detailInfo .infoDetail > dl > dd table + table {margin-top:10px;}
+.detailInfo .infoDetail > dl > dd table th {padding:5px 0;line-height:28px;font-weight:200;color:#000;vertical-align:top;}
+.detailInfo .infoDetail > dl > dd table td {padding:5px 0;line-height:28px;vertical-align:top;}
+.detailInfo .infoDetail > dl > dd .dotList li:before {top:15px;}
+.detailInfo .infoDetail > dl > dd .dotList.type2 li { float:left; width:256px;}
+/* .detailInfo .infoDetail > dl > dd dl { font-size:0;}
+.detailInfo .infoDetail > dl > dd dt { display:inline-block; width:90px; margin-right:6px; font-size:14px; color:#666; vertical-align:top; line-height:30px;}
+.detailInfo .infoDetail > dl > dd dd { display:inline-block; width:160px; font-size:14px; color:#666; line-height:30px;} */
+.detailInfo .infoDetail > dl > dd dl.type2 dt { width:100px;}
+.detailInfo .infoDetail > dl > dd dl.type2 dd { width:150px;}
+.detailInfo .infoDetail > dl > dd dd .smallText{line-height: 20px; display: block;}
+.detailInfo .infoDetail .link { display:inline-block; margin-left:5px; color:#9c836a; text-decoration:underline;}
+.detailInfo .infoDetail .bold { margin:10px 0 5px; font-weight:300; color:#333;}
+.detailInfo .tbLink { position:absolute; top:40px; right:0; color:#9c836a; text-decoration:underline;}
+.detailInfo .priceList { margin-bottom:0;}
+.detailInfo .priceList + * { margin-top:10px;}
+.detailInfo.priceInfo {padding-top:45px;}
+.detailInfo.priceInfo + .detailInfo {padding-top:8px;border-top:0 none;}
+.detailInfo.priceInfo + .detailFacility {padding-top:8px;border-top:0 none;}
+.detailInfo + .cautionBox {margin-top:15px;}
+.detailInfo.priceInfo .smallText {color:#999;}
+.detailInfo.detailFacility {padding-top:50px;}
+.cautionBox + .priceInfo, .cautionBox + .detailService {margin-top:50px;padding-top:40px;}
+.cautionBox + .detailFacility {padding-top:70px;border-top:0 none;}
+dl.tbl {display:table;width:100%;table-layout:fixed;font-size:14px;}
+dl.tbl > dt {display:table-cell;width:90px; padding:5px 6px 5px 0;vertical-align:top;}
+dl.tbl > dd {display:table-cell; padding:5px 0 5px 6px; vertical-align:top;}
+
+.jsSwiperMotion {}
+.jsSwiperMotion .slick-initialized { margin-left:-31px;}
+.jsSwiperMotion .slick-slide { overflow:hidden; margin-left:31px;}
+.detailInfo .jsSwiperMotion .img { width:544px; height:306px;}
+.detailInfo .jsSwiperMotion .img img { width:100%; height:100%;}
+.detailInfo .jsSwiperMotion h4 { margin-top:20px; font-size:16px; color:#333; font-weight:450;}
+.detailInfo .jsSwiperMotion h4.row2 {max-height:44px;}
+.detailInfo .jsSwiperMotion h4 strong {color:#9c836a;font-weight:inherit;}
+.detailInfo .jsSwiperMotion .text { overflow:hidden; height:38px; margin-top:10px; color:#666;}
+.detailInfo .btnDownloadLink { position:absolute; top:40px; right:0;}
+.detailInfo .btnDownloadLink a { font-size:14px; color:#9c836a; text-decoration:underline;}
+.detailInfo .btnDownloadLink a:before { content:''; display:inline-block; width:15px; height:15px; margin-top:-2px; margin-right:8px; vertical-align:middle; background:url('/resource/images/pc/common/icon/icon_download.png') no-repeat;}
+.detailInfo .btnDownloadLink a + a { margin-left:10px;}
+
+.detailInfo .brandIntroduce { position:relative;}
+.detailInfo .brandIntroduce h4 { font-size:16px; color:#9c836a;}
+.detailInfo .brandIntroduce .text { margin-top:8px; color:#666;}
+.detailInfo .brandIntroduce .link { margin-top:21px;}
+.detailInfo .brandIntroduce .link a { color:#9c836a; text-decoration:underline;}
+.detailInfo .brandIntroduce .brandLogo { position:absolute; top:0; right:0;}
+
+.detailInfo .tapView {}
+.detailInfo .tapView .title { margin-top:18px; font-weight:450; font-size:16px; color:#333;}
+.detailInfo .tapView .text { margin-top:5px; color:#666; line-height:22px;}
+
+.btnSubmitBox { padding:40px 0; border-top:1px dotted #e6e3df; text-align:center;}
+
+.dindDrinkwrap .eventList { margin-top:12px; padding-top:56px; border-top:1px solid #f4f2ef;}
+.dindDrinkwrap .eventList li div.txt { height:auto; padding:20px 0 0;}
+.dindDrinkwrap .eventList li div.txt .sub { margin-bottom:0;}
+.dindDrinkwrap .eventList + .paginate { margin-top:80px;}
+
+.eventSwipe {}
+.eventSwipe p.img, .eventSwipe p.img img {width:352px;height:232px;}
+.eventSwipe li > a { display:block;}
+.eventSwipe h4 { margin-top:20px; color:#333; font-weight:450;}
+.eventSwipe .text { overflow:hidden; height:38px; margin-top:10px; color:#666;}
+.eventSwipe .date {display:block; margin-top:20px; font-size:12px; color:#999;}
+.casualDetail { overflow:hidden; position:relative; margin-bottom:64px;}
+.casualDetail .img { float:left; width:512px; margin-right:64px;}
+.casualDetail .img img { width:512px;}
+.casualDetail h2 { margin-top:13px; font-size:30px; color:#9c836a; font-weight:100;}
+.casualDetail .subTit { margin-top:2px; font-size:16px; color:#9c836a;}
+.casualDetail .siteLink { margin-top:9px;}
+.casualDetail .siteLink a { color:#999; text-decoration:underline;}
+.casualDetail .siteLink a:after { content:''; display:inline-block; width:12px; height:12px; margin-top:-2px; margin-left:8px; vertical-align:middle; background:url('/resource/images/pc/common/icon/icon_site_link.png') no-repeat;}
+.casualDetail .infoDetail { display:table; position:absolute; bottom:24px; left:577px; right:0; width:544px; table-layout:fixed;} 
+.casualDetail .infoDetail > dl { display:table-cell;}
+.casualDetail .infoDetail > dl:first-child { width:190px;}
+.casualDetail .infoDetail > dl + dl { padding-left:24px;}
+.casualDetail .infoDetail > dl > dt { margin-bottom:3px; font-size:16px; color:#333; font-weight:300;}
+.casualDetail .infoDetail > dl > dd { margin-top:4px; line-height:22px;}
+.casualDetail .infoDetail > dl > dd dl { font-size:0;}
+.casualDetail .infoDetail > dl > dd dt { display:inline-block; width:50%; font-size:14px; color:#666; vertical-align:top; line-height:22px;}
+.casualDetail .infoDetail > dl > dd dd { display:inline-block; width:50%; font-size:14px; color:#666; line-height:22px;}
+.casualDetail .link { display:inline-block; color:#9c836a; text-decoration:underline;}
+
+/* 안내사항 */
+.cautionBox { border:1px solid #e6e3df; background:#f9f9f9;}
+.cautionBox h2 {font-size:16px !important; height:56px; padding:0 16px !important; line-height:56px; color:#e66045 !important;}
+.cautionBox h2:before { content:''; display:inline-block; width:20px; height:20px; margin-top:-3px; margin-right:8px; vertical-align:middle; background:url('/images/common/icon_caution.png') no-repeat;}
+.cautionBox .singleText { padding:16px; font-size:12px; color:#e66045;}
+.cautionBox .singleText:before { content:''; display:inline-block; width:20px; height:20px; margin-top:-3px; margin-right:8px; vertical-align:middle; background:url('/images/common/icon_caution.png') no-repeat;}
+.cautionBox .dotList { padding:25px 34px; background:#fff;}
+.cautionBox .dotList li + li { margin-top:10px;}
+.cautionBox .dotList li p {margin-top:5px;}
+.cautionBox .dotList li .title {font-weight:450;}
+.cautionBox .dotList li p + p {margin-top:10px;}
+.cautionBox .textBox { padding:25px 34px; background:#fff;}
+.cautionBox .textBox .title { margin-bottom:10px; color:#666; font-weight:300;}
+.cautionBox .textBox .dotList { padding:0 0;}
+.cautionBox .textBox .dotList + .title { padding-top:20px;}
+
+.cautionBox.settingA { margin:-20px 0 20px; border:0; background:none;}
+.cautionBox.settingA .singleText { padding:0;}
+
+.cautionBox.type2 h2 { color:#9c836a !important;}
+.cautionBox.type2 h2:before { background-position:0 -20px;}
+/* 이벤트 */
+.hotelParadiseWrap .events {margin-top:35px;}
+.hotelParadiseWrap .events h2 {margin-bottom:15px;font-weight:300;font-size:16px;color:#333;}
+div.events ul li:nth-child(1),
+div.events ul li:nth-child(3n + 1) { animation-delay: 0s;}
+div.events ul li:nth-child(2),
+div.events ul li:nth-child(3n + 2) { animation-delay: 0.2s;}
+div.events ul li:nth-child(3),
+div.events ul li:nth-child(3n + 3) { animation-delay: 0.4s;}
+
+.hotelParadiseWrap .eventTab {margin-top:-14px;margin-bottom:15px;}
+.hotelParadiseWrap .tapView .jsSwiperMotion .swiperArrow { top:-30px;}
+.hotelParadiseWrap .cautionBox + * {margin-top:53px;}
+
+/* layerPopup */
+.layerPopWrap { visibility:hidden; overflow-y: auto; position:fixed; top:0; left:0; width:100%; height:100%; z-index:100; opacity:0; transition:all .2s ease}
+.layerPopWrap .bg {position:fixed; top:0; right:0; width:100%; height:100%; background:rgba(0,0,0,0.8);}
+.layerPopWrap .layerPopCont { position:absolute; top:50%; left:50%; width:568px; padding:24px 64px 0; margin-left:-284px; background:#fff; -webkit-font-smoothing: antialiased; transform:translateY(-30px); transition:transform .4s ease .2s;  opacity:0;}
+.layerPopWrap .layerPopCont .layerPopClose { position:absolute; top:-26px; right:0; width:18px; height:18px; font-size:0; background:url('/images/common/btn_pop_close.png') no-repeat;}
+
+.layerPopWrap.normalLayer {}
+.layerPopWrap.normalLayer .layerPopCont { opacity:0; top:0; left:50%; width:800px; padding:0 32px; margin-left:0; margin-top:0; transform:translateX(-50%) translateY(-30px); transition:transform .4s ease .2s;}
+.layerPopWrap.normalLayer .popHeader { height:56px; line-height:56px; margin:0 -32px 32px; padding:0 32px; font-size:18px; color:#ffffff; font-weight:450; background:#857b71;}
+.layerPopWrap.normalLayer .layerPopClose { position:absolute; top:19px; right:24px;}
+
+.layerPopWrap.on { visibility:visible; opacity:1;}
+.layerPopWrap.on .layerPopCont { transform:translateY(0); opacity:1;}
+.layerPopWrap.on.normalLayer .layerPopCont { transform:translateX(-50%) translateY(0); opacity:1;}
+.layerPopWrap .mapPop img {max-width:736px;}

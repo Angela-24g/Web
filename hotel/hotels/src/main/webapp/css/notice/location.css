@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+	/*고객지원 > MAP*/
+	.mapWrap{padding: 0 0 150px;}
+	.mapWrap .mapBox{margin: 0px 0 0; height: 496px;}
+	.mapWrap .titleArea{position: relative; margin: 33px 0 50px;padding-right:300px;}
+	.mapWrap .titleArea > .address{margin: 10px 0 0; font-size: 20px; color: #666; font-weight: 200;}
+	.mapWrap .titleArea > .tel{margin: 10px 0 0; font-size: 20px; color: #666; font-weight: 200;}
+	.mapWrap .titleArea > .trans{margin: 10px 0 0; font-size: 20px; color: #666; font-weight: 200;}
+	.mapWrap .titleArea > .btnGroup{position: absolute; top: 7px; right: 0;}
+	.mapWrap .titleArea > .btnGroup > a{margin-left: 4px;}
+	.mapWrap .eventTab {margin: 0;}
+	.mapWrap .detailInfo {margin: 45px 0 0; padding: 0; border-top: 0;}
+	.mapWrap .detailInfo dl {overflow:hidden;}
+	.mapWrap .detailInfo dl + dl {margin-top:35px;}
+	.mapWrap .detailInfo h1 .intro {margin:20px;}
+	.mapWrap .detailInfo h1 {float:left;width:54px;font-size:19px;font-weight:300;line-height:33px;color:#9c836a;}
+	.mapWrap .detailInfo dt {float:left;width:54px;font-size:16px;font-weight:300;line-height:28px;color:#9c836a;}
+	.mapWrap .detailInfo dd {float:left;width:1050px;}
+	[lang="en"] .mapWrap .detailInfo dt {width:84px;}
+	[lang="en"] .mapWrap .detailInfo dd {width:1020px;}
+	.mapWrap .detailInfo dd * {line-height:28px;}
+	.mapWrap .detailInfo dd strong {display:block;margin-bottom:8px;font-size:16px;font-weight:300;color:#333;}
+	.mapWrap .detailInfo dd strong img {display:inline-block;margin:0 5px;}
+	.mapWrap .detailInfo dd em {color:#e66045;}
+	.mapWrap .detailInfo dd > span {display:block;margin:25px 0 5px;font-weight:300;color:#9c836a;font-size:16px;}
+	.mapWrap .detailInfo dd > strong + span {margin-top:0;}
+	.mapWrap .detailInfo dd .dotList > *:before {top:13px;}
+	.mapWrap .detailInfo dd .dotList > li:not(:first-child) {margin-top:5px;}
+	.mapWrap .detailInfo dd .time * {font-weight:200;}
+	.mapWrap .detailInfo dd .time em {color:#333;}
+	.mapWrap .detailInfo dd .time > span:not(:first-child) {display:inline-block;position:relative;margin-left:10px;padding-left:10px;}
+	.mapWrap .detailInfo dd .time > span:not(:first-child):before {content:'';position: absolute;top:50%;left:0;width:2px;height:12px;margin-top:-5px;background:#999;}
+	.mapWrap .detailInfo .transf{font-weight: bold;}
+	
+	.trans{
+		border-bottom: 1px solid #e6e3df;
+		padding: 10px;
+		margin: 10px;
+	}
+	
+	.subGnb {
+    position: fixed;
+    top: 48px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    border-bottom: 1px solid #e6e3df;
+    background: #fff;
+    transition: top .3s ease;
+    overflow: hidden;
+	}
+	
+}	

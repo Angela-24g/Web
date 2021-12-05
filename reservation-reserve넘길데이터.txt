@@ -1,0 +1,65 @@
+reservation-reserve
+
+상품명 : 
+reservation_adm.title + " (" + rez_adm_room_type.title + ")"
+
+체크인/아웃 : 
+reservation.check_in + " ~ " + reservation.check_out
+
+객실수/인원 : 
+"객실 " + reservation.room_count + "개"
+"성인 " + reservation.count_adult + "명 /" + "초등학생 " + reservation.count_elementary + "명 /" +
+"어린이 " + reservation.count_child + "명 /" + "유아 " + reservation.count_baby + "명"
+
+상품선택 : 
+rez_adm_room_type.benefit
+
+객실타입 : 
+room_type.type + " / " + room_detail.room_view + " / " + room_detail.room_location + " / " + room_detail.room_bedtype
+
+총 예약금액 :
+상품요금 reservation.price_product
+세금 및 봉사료 : reservation.price_service
+추가베드 : reservation.price_bed
+추가옵션 : reservation.price_options
+
+회원할인 : reservation.price_total 에서 할인율 곱하고 가지고 나가기.(컨트롤단)
+쿠폰사용, 포인트사용 : 
+총액 : reservation.price_total
+할인액 : 회원할인
+최종금액 : reservation.price_total - 회원할인
+
+====================================================
+정리
+
+* reservation 테이블
+reservation.check_in
+reservation.check_out
+reservation.room_count
+reservation.count_adult
+reservation.count_elementary
+reservation.count_child
+reservation.count_baby
+reservation.price_product
+reservation.price_service
+reservation.price_bed
+reservation.price_options
+reservation.price_total
+
+* reservation_adm 테이블
+reservation_adm.title
+주의사항 : rezAdm_no 로 번호만 넘어가니 reservationAdmDAO 로 select 해와야 함.
+
+* rez_adm_room_type 테이블
+rez_adm_room_type.title (가져옴)
+rez_adm_room_type.benefit (가져옴)
+
+* room_detail 테이블
+room_detail.roomType.type
+room_detail.room_view
+room_detail.room_location
+room_detail.room_bedtype
+
+
+추가 필요데이터
+rooms_no : room_detail.getRoomDetail_no() 한 후 rooms 꺼내서 첫번째 룸 일련번호 가져오기

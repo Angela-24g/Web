@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+:root{
+	/* color */ 
+	--brown-color: #9c836a;
+	--brown-light-color: #e6e3df;
+	--black-color: #333;
+	--black-white-color: #666;
+	--red-color:#e66045;
+	/* font-size */
+	--large-size: 30px;
+	--midium-size: 16px;
+}
+
+/* contTitle */
+.contTitle{ padding:59px 0 58px; font-weight:100; font-size:var(--large-size); line-height:40px; text-transform:uppercase;}
+.contTitle span{ padding-bottom:13px; font-size:var(--midium-size); color:var(--brown-color); font-weight: bold;}
+.contTitle em{ font-weight: bold; color: rgba(0,0,0,0.7);}
+
+/*purchaseBox*/
+.purchaseBox{ border-top: 2px solid var(--brown-color); border-bottom: 1px solid var(--brown-color); padding: 20px 0 20px; margin-bottom: 55px; display:flex;}
+.purchaseBox h3{ padding: 0 17px; font-size:var(--midium-size); color: var(--brown-color); font-weight: 300;}
+.purchaseBox p{ line-height:24px; vertical-align:top; padding: 0 40px;}
+
+/*mypageMembership*/
+.mypageMembership{ margin-bottom: 53px;}
+.mypageMembership h2{ color:#333; font-size:var(--midium-size); margin-bottom:13px; font-weight:300;}
+.mypageMembership .slider{ width:100%; height:300px; background-color:gray;}
+
+/*mypagePoint*/
+.mypagePoint{ margin-bottom: 53px;}
+.mypagePoint .mypagePoint_head{ margin-bottom: 13px; display:flex; justify-content: space-between;}
+.mypagePoint .mypagePoint_head h2{ font-weight:300; font-size: 16px; color: var(--black-color);}
+.mypagePoint .mypagePoint_head a{ color:var(--brown-color); text-decoration:underline;}
+.mypagePoint_body ul{ width:100%; display:flex; justify-content: space-between;}
+.mypagePoint_body li{ display:flex; justify-content: space-between; width:50%; height:72px; padding:0 24px; border:1px solid var(--brown-light-color);}
+.mypagePoint_body strong{ font-size:var(--midium-size); color:#999; margin:auto 0;}
+.mypagePoint_body span{ font-size:var(--large-size); font-weight:400; font-family:"Roboto"; margin:auto 0;}
+.mypagePoint_body .usepoint{ border-top:1px solid var(--brown-color);}
+.mypagePoint_body .usepoint span{ color:#9c836a;}
+.mypagePoint_body .deletepoint{ border-top:1px solid var(--red-color);}
+.mypagePoint_body .deletepoint span{ color:var(--red-color);}
+
+/*mypagecoupon*/
+.mypagecoupon{ margin-bottom: 53px;}
+.mypagecoupon_head{ margin-bottom:13px; display:flex; font-weight: 300;}
+.mypagecoupon_head #couponCount{ color:var(--red-color);}
+.mypagecoupon_head h2{ color:var(--brown-color); font-size:var(--midium-size);}
+.mypagecoupon_head span{ color:var(--black-white-color); margin: auto 0;}
+
+/*mypageNoticeWrap*/
+.mypageNoticeWrap{ display:flex; width:100%; margin-bottom: 53px;}
+.mypageNoticeWrap .mypageNotice{ width:50%;}
+.mypageNoticeWrap .mypageNotice h2{ margin-bottom: 13px; font-size: var(--midium-size); color: var(--black-color); font-weight: 300;}
+

@@ -1,0 +1,241 @@
+/* 회원가입타이틀 시작 */
+h1.contTitle {
+	padding: 59px 0 58px;
+	font-weight: 100;
+	font-size: 30px;
+	line-height: 40px;
+	text-transform: uppercase;
+}
+
+h1.contTitle span {
+	display: block;
+	padding-bottom: 13px;
+	font-size: 16px;
+	color: #9c836a;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+/* 스텝박스 시작 */
+.stepWrap {
+    margin-bottom: 40px;
+    height: 70px;
+}
+
+.stepWrap ul li {
+    position: relative;
+    float: left;
+    width: 192px;
+    line-height: 24px;
+    padding-top: 35px;
+    font-size: 16px;
+    color: #9c836a;
+    font-weight: 300;
+    vertical-align: top;
+}
+
+.fa-circle:before {
+    display: block;
+    position: absolute;
+    top: -13px;
+    left: 0;
+    width: 32px;
+    height: 32px;
+}
+
+.stepWrap ul li:first-child .fa-circle:before{
+	top:0;
+}
+
+.stepWrap ul li:not(:last-child):after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 8px;
+    left: 40px;
+    height: 1px;
+    background-color: #e6e3df;
+}
+
+/* 스텝박스 끝 */
+/* 회원가입타이틀 끝 */
+
+/* 약관박스 시작 */
+.fullBg {
+    width: 1280px;
+    padding: 0 80px;
+	padding-top: 51px;
+	padding-bottom: 104px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+
+.innerBg {
+    margin-bottom: 60px;
+}
+
+.innerTitle{
+    padding-bottom: 32px;
+    border-bottom: 1px rgba(61,60,58,0.2) solid;
+}
+
+input[type='checkbox'] {
+    width: 20px !important;
+    height: 20px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: 1px rgb(102, 102, 102) solid;
+}
+
+input[type='checkbox']:checked {
+    background: url(/images/member/checkbox.png) no-repeat;
+    background-size : cover;
+}
+
+.all-title em{
+	font-size: 16px;
+	color: #000;
+    font-weight: 600;
+    vertical-align: middle;
+}
+/* 약관상세 */
+.term{
+	padding-bottom: 49px;
+}
+.termArea > div:first-of-type {
+    margin-top: 47px;
+}
+
+.termArea > div {
+    position: relative;
+    margin-top: 40px;
+}
+
+.termArea label {
+    font-size: 16px;
+    color: #000;
+    font-weight: bolder;
+}
+.termArea label{
+    vertical-align: middle;
+}
+
+.termArea label span {
+    display: inline-block;
+    color: #e66045;
+}
+
+.termArea .termTxt {
+    width: 100%;
+    height: 196px;
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #e6e3df;
+    resize: none;
+    box-sizing: border-box;
+    overflow-y: auto;
+    vertical-align: top;
+    background-color: #fff;
+    word-break: keep-all;
+}
+
+/* 이용약관 상세내용 */
+.termTxt *:not(.smallText, h2) {
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+}
+
+.termTxt h3 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.termTxt *:not(h2) + h3 {
+    margin-top: 20px;
+}
+
+.termTxt h3 + ol, .termTxt > h3 + ul {
+    margin-top: 0;
+}
+
+.termTxt ol, .termTxt ul {
+    margin-top: 15px;
+}
+
+.termTxt table {
+    width: 100%;
+    text-indent: 0;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.termTxt table tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.termTxt table th {
+    font-weight: 200;
+    border-left: 1px solid #ccc;
+    padding: 7px 5px;
+}
+
+.termTxt table td {
+    border-left: 1px solid #ccc;
+    padding: 5px;
+}
+
+.termTxt *:not(h2) + h4 {
+    margin-top: 20px;
+}
+
+.termTxt h4 {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.submit_btn {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.submit_btn .btn{
+	width: 192px;
+    margin: 0 4px;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 192px;
+    height: 56px;
+    padding: 0 32px;
+    border: 1px solid #9c836a;
+    line-height: 56px;
+    font-size: 18px;
+    vertical-align: middle;
+    font-weight: 300;
+    color: #9c836a;
+    text-align: center;
+    background: #fff;
+    transition: all .3s ease;
+}
+.btn.btnFull {
+    border: 2px solid #9c836a;
+}
+
+.btn.btnFull:hover {
+    color: #fff;
+    background: #9c836a;
+}
+
+/* 약관박스 끝 */
